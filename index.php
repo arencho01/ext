@@ -38,8 +38,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="ui/dev/extjs/resources/css/ext-all.css" />
-    <link rel="stylesheet" type="text/css" href="ui/dev/extjs4/resources/css/ext-sandbox-debug.css" />
-    <link rel="stylesheet" type="text/css" href="ui/dev/extjs4/resources/css/ext-sandbox-fix.css" />
+<!--    <link rel="stylesheet" type="text/css" href="ui/dev/extjs4/resources/css/ext-sandbox-debug.css" />-->
+<!--    <link rel="stylesheet" type="text/css" href="ui/dev/extjs4/resources/css/ext-sandbox-fix.css" />-->
     <link rel="stylesheet" type="text/css" href="ui/resources/css/added_styles.css" />
 
 </head>
@@ -48,7 +48,7 @@
     <script language="javascript" type="text/javascript" src="ui/dev/stomp/stomp.min.js"></script>
     <script language="javascript" type="text/javascript" src="ui/dev/extjs/adapter/ext/ext-base.js"></script>
     <script language="javascript" type="text/javascript" src="ui/dev/extjs/ext-all.js"></script>
-    <script language="javascript" type="text/javascript" src="ui/dev/extjs4/ext-all-sandbox.js"></script>
+<!--    <script language="javascript" type="text/javascript" src="ui/dev/extjs4/ext-all-sandbox.js"></script>-->
     <script language="javascript" type="text/javascript" src="vendors/jquery.md5.js"></script>
 
     <?php
