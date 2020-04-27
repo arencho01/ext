@@ -19,6 +19,8 @@
     $addFileString = '<script language="javascript" type="text/javascript" src="' . $dir . '/{filename}"></script>';
     $files = scandir($dir);
 
+    asort($files, SORT_STRING | SORT_FLAG_CASE | SORT_NATURAL);
+
     foreach ($files as $fileName) {
         if (!in_array($fileName, ['..', '.'])) {
             $panelNames[] = explode('.', $fileName)[0];

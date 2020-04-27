@@ -6,7 +6,6 @@ Ext.onReady(function () {
     });
 
     var tabPanel = new Ext.TabPanel({
-       // activeTab: 0,
         border: false,
         enableTabScroll:true,
         items: items
@@ -14,12 +13,14 @@ Ext.onReady(function () {
 
     tabPanel.on('tabchange', function (t, activeTab) {
         var curTabIndex = t.items.indexOf(activeTab);
+        curTabIndex++;
 
         location.hash = '#' + curTabIndex;
     });
-    tabPanel.on('afterrender', function (t, activeTab) {
+    tabPanel.on('afterrender', function (t) {
         if (location.hash != '') {
             var curTabIndex = parseInt(location.hash.split('#')[1]);
+            curTabIndex--;
 
             t.setActiveTab(curTabIndex);
         }
