@@ -1,0 +1,89 @@
+table.vet-sch-tbl {
+    width : 100%;
+    margin-top : -1px;
+    height: 100%;
+}
+table.vet-sch-tbl tr {
+    height : 100%;
+}
+table.vet-sch-tbl tr:first-child {
+    height : 1px;
+    font-size:1px;
+    line-height:1px;
+}
+.vet-sch-tbl-cells {
+    border-left:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    padding:0px;
+    text-align:center;
+    font-size:11px;
+    height:40px;
+}
+_table.vet-sch-tbl tr td:first-child {
+    background-color: #f6f9fc;
+    color: #666;
+    padding: 5px;
+    font-size: 12px;
+    text-align: left;
+}
+.vet-sch-inv-row {
+    height : 1px;
+    border : 0px;
+    padding : 0px;
+    margin : 0px;
+    font-size : 1px;
+    line-height : 1px;
+} 
+table.vet-sch-tbl tr td div {
+    height : 100%;
+    overflow: hidden;
+    padding:2px 0px 0px 0px;
+}
+
+.vet-sch-tbl-schedule-smena-row table.vet-sch-tbl tr td div {
+    height: 100%;
+}
+table.vet-sch-tbl tr td div div, .vet-sch-tbl-schedule-smena-row table.vet-sch-tbl tr td div div{
+    height : auto;
+    text-align: center;
+}
+.vet-sch-users-block{
+    border-left:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    padding:3px 0px 0px 0px;
+    text-align:center;
+    font-size:11px;
+    height:40px;
+    background-color: #E5ECF6;   
+}
+.vet-sch-cell-is_night, .vet-sch-cell-is_type{
+    font-weight : bold;
+}
+.vet-sch-cell-is_type {
+    font-style: italic;
+}
+.vet-sch-cell-night .vet-sch-cell-type{
+    font-size : 14px;
+}
+.vet-sch-cell-period{
+    font-size : 12px;
+}
+table.vet-sch-tbl div.vet-sch-cell {
+    cursor : pointer;
+    position: relative;
+}
+table.vet-sch-tbl div.vet-sch-cell-selected {
+    background-color : #DDD;
+}
+table.vet-sch-tbl div.vet-sch-cell-over {
+    background-color : #EFEFEF;
+}
+table.vet-sch-tbl div.vet-sch-cell div.vet-sch-smena-point {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 15px;
+    height: 15px;
+    font-weight: bold;
+    font-style: normal;
+}

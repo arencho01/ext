@@ -1,0 +1,26 @@
+.wizard-buttons-panel {
+    margin-top: 5px;
+}
+.wizard-button-separator {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-width: 1px !important;
+}
+.wizard-wiki-text {
+    color: #2c78aa !important;
+    font-weight: bold;
+}
+.wizard-wiki-price-text {
+    color: #166498 !important;
+}
+.wizard-qtip {
+    font-size: 14px;
+}
+.noradius {
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -o-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -khtml-border-radius: 0px;
+    border-radius: 0px;
+}

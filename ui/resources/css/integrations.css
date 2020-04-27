@@ -1,0 +1,217 @@
+.integration-list-item {
+    background-repeat: no-repeat;
+    background-size: 64px 64px;
+    background-position: left center;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 84px;
+    padding: 5px 10px 5px 74px;
+    box-sizing: border-box;
+}
+
+.integration-list-item + .integration-list-item {
+    border-top: 1px solid #d5d5d5
+}
+
+.integration-list-item-title {
+    color: #15428b;
+}
+
+.integration-list-item-desc {
+    color: #848484;
+}
+
+.integration-list-item-desc a {
+    color: #1c488f;
+    text-decoration: none;
+}
+
+.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+}
+
+.integration-list-item-buttons-container {
+    display: flex;
+    align-items: center;
+}
+
+.integration-list-item-button-settings {
+    border-radius: 4px;
+    background-color: #1b900f;
+    height: 40px;
+    width: 40px;
+    background-image: url(../../../ui/desktop/images/mainicons/pencil-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+    cursor: pointer;
+}
+
+.integration-list-item-button-big-settings {
+    border-radius: 4px;
+    background-color: #1b900f;
+    height: 40px;
+    width: 155px;
+    border: none;
+    background-image: url(../../../ui/desktop/images/mainicons/gear-white.png);
+    background-repeat: no-repeat;
+    background-position: 8px center;
+    background-size: 24px;
+    cursor: pointer;
+    padding: 0px 0px 0px 30px;
+    color: white;
+}
+
+.integration-list-item-buttons-container > * + * {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+label.integration-list-item-buttons-checkbox {
+    display: inline-block;
+    min-width: 100px;
+    min-height: 40px;
+}
+
+label.integration-list-item-buttons-checkbox * {
+    margin-top: 6px;
+}
+
+.integration-list-item-buttons-checkbox input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 20px;
+}
+
+.integration-list-item-buttons-checkbox__text {
+    position: relative;
+    padding: 0 0 0 100px;
+    cursor: pointer;
+    --text-off: 'Off';
+    --text-on: 'On';
+}
+
+.integration-list-item-buttons-checkbox__text:before {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    height: 38px;
+    width: 80px;
+    border-radius: 19px;
+    background: white;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    content: var(--text-off);
+    color: #657a7b;
+    text-align: right;
+    line-height: 38px;
+    padding: 0px 12px;
+    box-shadow: 0 0 0 1px #95a9ab;
+}
+.only-check .integration-list-item-buttons-checkbox__text {
+    padding: 0 0 0 155px;
+}
+.only-check .integration-list-item-buttons-checkbox__text:before {
+    width: 135px;
+}
+.only-check .integration-list-item-buttons-checkbox input:checked + .integration-list-item-buttons-checkbox__text:after {
+    left: 129px;
+}
+
+.integration-list-item-buttons-checkbox__text:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    width: 22px;
+    height:22px;
+    border-radius: 10px;
+    background: #ebf6f6;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    box-shadow: 0 0 0 1px #95a9ab;
+}
+
+.integration-list-item-buttons-checkbox input:checked + .integration-list-item-buttons-checkbox__text:before {
+    background: #c9f0c3;
+    color: #1b900f;
+    text-align: left;
+    content: var(--text-on);
+}
+
+.integration-list-item-buttons-checkbox input:checked + .integration-list-item-buttons-checkbox__text:after {
+    left: 74px;
+}
+
+.blue-button {
+    padding: 9px 14px;
+    font-size: 16px;
+    line-height: normal;
+    display: inline-block;
+    height: 40px;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    background-color: #006dcc;
+    *background-color: #04c;
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#08c),to(#04c));
+    background-image: -webkit-linear-gradient(top,#08c,#04c);
+    background-image: -o-linear-gradient(top,#08c,#04c);
+    background-image: linear-gradient(to bottom,#08c,#04c);
+    background-image: -moz-linear-gradient(top,#08c,#04c);
+    background-repeat: repeat-x;
+    border-color: #04c #04c #002a80;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.blue-button * {
+    line-height: 16px;
+    font-size: 16px !important;
+    color: #fff !important;
+}
+
+.blue-button button {
+    height: 20px !important;
+}
+
+.blue-button.over, .blue-button:hover {
+    background: none;
+    background-color: #04c;
+    *background-color: #003bb3
+}
+
+
+.green-button {
+    padding: 9px 14px;
+    font-size: 16px;
+    line-height: normal;
+    display: inline-block;
+    height: 40px;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    background-color: #32900F;
+    border-color: #32900F;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.green-button * {
+    line-height: 16px;
+    font-size: 16px !important;
+    color: #fff !important;
+}
+
+.green-button button {
+    height: 20px !important;
+}
+
+.green-button.over, .green-button:hover {
+    background: none;
+    background-color: #42A00F;
+}

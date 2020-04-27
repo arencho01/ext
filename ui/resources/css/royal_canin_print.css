@@ -1,0 +1,224 @@
+a.good-link {
+    font-weight: bold;
+}
+div.fst {
+    border: 1px solid black;
+    padding: 10px;
+}
+.food-recomend {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 750px;
+    margin: 0 auto;
+    background: #fff;
+    font-size: 14px;
+    padding-top: 7px;
+}
+.food-recomend-inner {
+    border-top: 2px solid #000;
+    position: relative;
+   /* min-height: 300px;*/
+    padding: 5px 10px 15px;
+}
+.food-recomend h5 {
+    padding: 0 2px;
+    font-weight: bold;
+    margin: 0;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    line-height: 1;
+    position: absolute;
+    top: -8px;
+    left: 9px;
+    z-index: 100;
+}
+.food-recomend h6 {
+    font-size: 14px;
+    line-height: 1;
+    padding: 0;
+    margin: 10px 0 3px;
+    color: #000;
+    font-weight: bold;
+}
+.food-brand-info {
+    float: right;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 160px;
+}
+.food-brand-info img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+.food-brand-preview span {
+    display: block;
+    text-align: center;
+    color: #a2a2a2;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+.food-recomend-item-desc {
+    line-height: 1.2;
+}
+ul.food-recomend-diagnoses {
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-gap: 30px;
+    -moz-column-gap: 30px;
+    -webkit-column-gap: 30px;
+}
+img.food-brand-preview-link {
+    display: block;
+}
+img.food-brand-logo-link {
+    display: none;
+}
+.food-brand-preview-empty img {
+    display: none;
+}
+
+
+
+
+
+.print-food-recomend {
+    max-width: 750px;
+    margin: 0 auto;
+    font-family: verdana, geneva, sans-serif;
+    padding: 0 10px 10px;
+    border: 2px solid #000;
+}
+.print-food-recomend-header {
+    /*display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;*/
+    display: block;
+    border-bottom: 2px solid #000;
+    padding: 10px 0 15px;
+}
+.print-food-recomend-logo {
+    max-width: 225px;
+    max-height: 80px;
+    /*display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;*/
+    display: inline-block;
+}
+.print-food-recomend-logo img {
+    width: 225px;
+    height: 80px;
+    display: inline-block;
+}
+.print-food-recomend-clinic-info {
+    line-height: 1.5;
+    font-size: 14px;
+    text-align: right;
+    color: #000;
+    float: right;
+}
+.print-food-recomend-clinic-info::after {
+    clear: both;
+}
+
+
+.print-food-recomend-client-info {
+    width: 100%;
+    font-size: 14px;
+    width: 95%;
+    padding: 20px 0;
+}
+.print-food-recomend-client-info td {padding-bottom: 10px;}
+.pet-options {
+    /*display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;*/
+    height: 17px;
+    color: #2b2b2b;
+    white-space: nowrap;
+}
+.pet-options .pet-options-age,
+.pet-options .pet-options-sex {
+    display: inline-block;
+    margin-left: 10px;
+}
+.pet-options > div span:last-child {font-weight: bold;}
+.pet-options > div span:first-child:after {
+    content: '';
+    display: inline-block;
+    height: 13px;
+    border-bottom: 1px dashed #2b2b2b;
+    width: 15px;
+    margin-left: 2px;
+    margin-right: 1px;
+}
+.print-food-recomend-client-info-title {overflow: hidden;}
+.print-food-recomend-client-info-title  span {
+    white-space: nowrap;
+    height: 17px;
+    line-height: 17px;
+    color: #000;
+}
+.print-food-recomend-client-info-title   span:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    height: 13px;
+    border-bottom: 1px dashed #2b2b2b;
+    margin-left: 2px;
+    margin-right: 1px;
+    display: inline-block;
+}
+.print-food-recomend-client-pet-weight td, .print-food-recomend-client-doctor  td {padding-top: 15px;}
+.pet-recomends-title {
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    position: relative;
+}
+.pet-recomends-title b {
+    background: #fff;
+    padding: 0 10px;
+    position: relative;
+}
+.pet-recomends-title span:before {
+    content: '';
+    display: inline-block;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-bottom: 2px solid #000;
+}
+
+.food-recomend-item-symptoms {display: none;}
+/*.food-recomend-item-recommendations {display: none;}*/
+.food-recomend-item-indications {display: none;}
+.food-recomend-item-contraindications {display: none;}
+.food-recomend-item-diagnoses {display: none;}
+span.food-recomend-food-type-right {display: none;}
+.food-recomend-pet-type-right {display: none;}
+.food-recomend-pet-type-left {display: none;}
+.food-recomend-food-type-left {display: block;}
+.food-brand-info {display:none;}
+.food-recomend-item-desc {display: inline;}

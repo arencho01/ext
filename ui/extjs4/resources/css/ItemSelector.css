@@ -1,0 +1,35 @@
+/* Styles used by Ext.ux.form.ItemSelector */
+
+.x4-form-multiselect-body .x4-boundlist .x4-mask {
+    background: none;
+}
+
+.x4-form-itemselector-body .x4-form-item {
+    margin: 0;
+}
+
+.x4-form-itemselector-top {
+    background-image: url(../../../resources/images_new/top2.svg);
+}
+.x4-form-itemselector-up {
+    background-image: url(../../../resources/images_new/up2.svg);
+}
+.x4-form-itemselector-add {
+    background-image: url(../../../resources/images_new/right2.svg);
+}
+.x4-form-itemselector-remove {
+    background-image: url(../../../resources/images_new/left2.svg);
+}
+.x4-form-itemselector-down {
+    background-image: url(../../../resources/images_new/down2.svg);
+}
+.x4-form-itemselector-bottom {
+    background-image: url(../../../resources/images_new/bottom2.svg);
+}
+.x-vertical-tabs-selector {
+    margin-top: 1px;
+    font: bold 14px arial,tahoma,verdana,helvetica;
+    cursor: pointer;
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+}

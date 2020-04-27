@@ -1,0 +1,36 @@
+.medcard-img {
+    width: 100%;
+    height: auto;
+}
+.parent-medcard-img {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.parent-medcard-img:after {
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    content: '';
+    display: inline-block;
+}
+
+@media only screen and (max-width: 420px) {
+    .medcard-img {
+        width: 100%;
+        height: auto;
+        margin: 5px auto;
+        display: inline-block;
+    }
+}
+@media only screen and (min-width: 421px) {
+    .medcard-img {
+        width: 48%;
+        height: auto;
+        margin: 5px auto;
+        display: inline-block;
+        float: left;
+    }
+}

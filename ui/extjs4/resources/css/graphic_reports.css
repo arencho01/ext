@@ -1,0 +1,33 @@
+.graphic-report-list-item{
+    padding: 15px;
+    border-width: 0px;
+    border-style: solid;
+    background-color: white;
+    -moz-box-shadow: 0px 0px 5px #6B6464;
+    -webkit-box-shadow: 0px 0px 5px #6B6464;
+    box-shadow: 0px 0px 5px #6B6464;
+    position: relative;
+}
+.graphic-report-list-panel{
+    border-width: 0px;
+    box-shadow: 0px 0px 5px #6B6464 !important;
+}
+.graphic-report-list-question{
+    background: url(../../../resources/images_new/question.svg) no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 18px;
+    left: 175px;
+}
+.graphic-report-tooltip{
+    font-size: 14px;
+    padding: 10px;
+}
+.-tooltip-template-combo{
+    font-size: 16px !important;
+    /*font-weight: bold !important;*/
+    /*padding: 10px;*/
+    z-index: 999999999 !important;
+    box-shadow: none !important;
+}

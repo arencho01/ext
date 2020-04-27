@@ -1,0 +1,174 @@
+/* --------------------------------------------------------------
+	reset.css
+	* Resets default browser CSS.
+-------------------------------------------------------------- */
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+input {
+    margin: 0;
+    padding: 0;
+}
+article, aside, details, figcaption, figure, dialog,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    float: none !important;
+}
+table, th, td {
+    vertical-align: top;
+}
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+}
+blockquote, q {
+    quotes: "" "";
+}
+a img {
+    border: none;
+}
+:focus {
+    outline: 0;
+}
+/*=================================== Total css ===================================*/
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Tahoma;
+    color: #333333;
+    font-size: 12px;
+    line-height: normal;
+    background: #ffffff;
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    min-width: 480px;
+}
+.clear {
+    clear: both;
+    height: 1px;
+    visibility: hidden;
+}
+a {
+    color: #416aa3;
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+    color: #416aa3;
+    text-decoration: underline;
+}
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    width: auto;
+}
+.input-text::-webkit-input-placeholder {
+    color: #626161;
+}
+.input-text:-moz-placeholder {
+    color: #626161;
+}
+button.button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+/* FF Fix */
+button.button {
+    -webkit-border-fit: lines;
+}
+/* <- Safari & Google Chrome Fix */
+h1, h2, h3, h4, h5, h6 {
+    color: #333333;
+    font-family: Arial;
+    margin-bottom: 10px;
+    font-weight: bold;
+    line-height: 1.333;
+}
+#container {
+    position: relative;
+}
+.wrapper-content {
+    width: 980px;
+    margin: auto;
+    position: relative;
+    z-index: 5;
+}
+input.input-text,
+textarea {
+    margin: 0;
+    padding: 5px 10px 5px 10px;
+    height: 20px;
+    width: 252px;
+    border: 1px solid #a4ceed;
+    font-size: 14px;
+    color: #5e5e5e;
+    font-family: Arial;
+    line-height: 20px;
+}
+input.input-text:focus,
+textarea:focus {
+    border-color: #a4ceed;
+}
+/* End Total css ====*/
+
+/* b-contacts-info
+=============================-*/
+.b-waiting-table {
+    width: 100%;
+    font-size: 13px;
+    border-collapse: collapse;
+}
+.b-waiting-table td{
+    padding: 5px;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    width: 20%;
+}
+.b-waiting-table thead td{
+    font-weight: bold;
+    background: #EDEEF0;
+    border: 1px solid #999;
+    font-size: 15px;
+}
+.b-waiting-table__at_the_doctor {
+    font-weight: bold;
+    background: #EDEEF0;
+    border: 1px solid #999;
+    font-size: 13px;    
+    text-align: center;
+}

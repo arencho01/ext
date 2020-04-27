@@ -1,0 +1,15 @@
+.help {  
+    margin:20px 25% 0 25%;
+    width: 470px;
+}
+.help__title {
+    font-size: 18px; 
+}
+.help__item {
+    font-size: 14px; 
+    padding-left: 10px;
+    padding-top: 5px;    
+}
+.help__item_img {
+    padding-right: 10px;
+}

@@ -1,0 +1,62 @@
+/* 
+    Document   : mini-medcards
+    Created on : 05.10.2012, 9:20:24
+    Author     : drlev
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.mini-medcards {
+    height: 100%;
+}
+
+.mini-medcards-title{ 
+    color:#15428B;
+    font-weight:bold;
+    margin-top:5px;
+    width: 100px;
+    float: left;
+}
+
+.mini-medcards-header{
+    height: 50px;
+}
+
+.mini-medcards-navigator{
+    height: 100%;
+    margin-left: 100px;
+}
+
+.mini-medcards .x-tbar-page-prev, .mini-medcards .x-tbar-page-next{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    margin-top: 17px;
+    float: left;
+    width: 12px !important;
+}
+
+.mini-medcards .x-tbar-page-next{
+    float: right;
+    margin-right: 5px;
+}
+
+.mini-medcards-navigator-title{
+    background-color: #DFE8F6;
+    margin: 0px 15px;
+    height: 100%;
+    border: 1px #99BBE8 solid;
+    padding: 0px 12px;
+    line-height: 1.4em;
+}
+
+.mini-medcards-body{
+    font-size: .85em;
+    line-height: 1.6em;
+    padding-top: 10px;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+}
+
+.mini-medcards p {
+    padding: 0px !important;
+}

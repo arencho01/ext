@@ -1,0 +1,9 @@
+.add {background-image:url(../images_new/add.svg) !important;}
+.all_invoices {background-image:url(../images/flag_green.png) !important;}
+.current_invoices {background-image:url(../images/flag_blue.png) !important;}
+.trash_invoices {background-image:url(../images/flag_red.png) !important;}
+.unpaid_invoices {background-image:url(../images/addbk_16.png) !important;}
+.payed_invoices {background-image:url(../images_new/payed_invoices.svg) !important;}
+.x-tool-bug{
+    background-image:url(../images/bug.png);
+}

@@ -1,0 +1,4 @@
+env:
+    java_path: "/usr/bin"
+    php: "/usr/bin/php"
+    git: "/usr/bin/git"

@@ -1,0 +1,40 @@
+.x-toolbar div.tag-display-items, .tag-row-items {
+    padding: 6px 0px 0px 0px;
+}
+.tag-display-item, .tag-row-item {
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    padding: 1px 3px;
+    margin-right: 5px;
+    line-height: 23px;
+    color: black;
+}
+.x-toolbar div.tag-display-item, .tag-row-item {
+    line-height: 23px;
+}
+
+.tag-display-item img, .tag-row-item img{
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    position: relative;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+.tag-display-item img.tag-delete, .tag-row-item img.tag-delete{
+    background: url(../../resources/images_new/delete.svg) -4px;
+}
+
+.tag-display-item img.tag-add, .tag-row-item img.tag-add{
+    background: url(../../resources/images_new/add.svg) -4px;
+}
+
+.tag-display-item-vbox {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.tag-display-item-hbox {
+    float: right;
+    margin-bottom: 2px;
+}

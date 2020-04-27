@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            setTimeout(function () {
+                //	window.location.reload();
+            }, 2000);
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="incomming">
+                <header class="incomming__top row">
+                    <div class="incomming__caller-info">
+                        <span class="incomming__label incomming__label-bold">Входящий </span><span class="incomming__label">+7(951)699-77-77</span>
+                    </div>
+                    <div class="toolbar toolbar-right">
+                        <button class="button button-small toolbar__save">s</button><button class="button button-small toolbar__minimize">m</button>
+                    </div>
+                </header>
+                <form class="incomming__form base-form" action="get">
+                    <div class="incomming__form-topgroup row">
+                        <fieldset class="incomming__fio">
+                            <input type="text" placeholder="Фамилия" class="incomming__fio-input base-form__input">
+                            <input type="text" placeholder="Имя" class="incomming__fio-input base-form__input">
+                            <input type="text" placeholder="Отчество" class="incomming__fio-input base-form__input">
+                        </fieldset>
+                        <fieldset class="incomming__pet row">
+                            <legend class="base-form__legend">Питомец:</legend>
+                            <input type="text" placeholder="Кличка" class="incomming__pet-input base-form__input">
+                            <input type="text" placeholder="Порода" class="incomming__pet-input base-form__input">
+                        </fieldset>
+                    </div>
+                    <div class="incomming__form-bottomgroup row">
+                        <div class="incomming__about">
+                            <fieldset class="incomming__about-top">
+                                <input type="text" placeholder="Принял звонок" class="incomming__about-input base-form__input">
+                                <input type="text" placeholder="Тип звонка"  class="incomming__about-input base-form__input">
+                                <input type="text" placeholder="Результат звонка"  class="incomming__about-input base-form__input">
+                            </fieldset>
+                            <fieldset class="incomming__about-textarea">
+                                <textarea name="info" cols="30" rows="10" placeholder="Информация о звонке"  class="base-form__textarea"></textarea>
+                            </fieldset>
+                        </div>
+                        <div class="inclomming__tools">
+                            <div class="incomming__tools-title"></div>
+                            <div class="toolbar">
+                                <div class="row"><span class="incomming__label incomming__label-bold incomming__label-red">Запланировать:</span></div>
+                                <div class="row">
+                                    <button class="button button-big toolbar__visit">Визит</button>
+                                </div>	
+                                <div class="row">
+                                    <button class="button button-big toolbar__call">Звонок</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </body>
+</html>

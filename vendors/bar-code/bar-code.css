@@ -1,0 +1,138 @@
+/*=================== bar-code =================== */
+.bar-code__0-qty{
+    width: 70px;
+}
+.bar-code__1-qty{
+    width: 70px;
+}
+.bar-code-mask{
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 9100;
+}
+.bar-code{
+  border: 1px solid #DDDDDD;
+  color: #000;
+  width: 720px;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  line-height: 18px;
+  font-size: 14px;
+  left: 10px;
+  top:100px;
+  position: absolute;
+  z-index: 9110;
+  display: none;
+  background-color: #fff;
+}
+.bar-code__input{
+  font-size: 14px;
+  line-height: 14px;
+  font-family: Arial;
+  font-weight: normal;
+  padding: 5px;
+  width: 250px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+      -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+          transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+.bar-code__input:focus{
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+.bar-code__checkbox {
+    width: 20px;
+}
+.bar-code__sum{
+  font-weight: bold;
+}
+.bar-code__form .row{
+  margin:0 0 10px 0;
+}
+.bar-code__label{
+  margin-right:15px;
+}
+.bar-code__checkbox_label{
+  margin-left:25px;
+}
+.bar-code__form .cost-and-button-row{
+  overflow:hidden;
+}
+.bar-code__form .cost-and-button-row .left{
+  float:left;
+  line-height:28px;
+}
+.bar-code__form .cost-and-button-row .right{
+  float:right;
+}
+.bar-code__form .cost-and-button-row .right button{
+  margin-left:5px;
+}
+.bar-code__form .cost-and-button-row .right button:first-child{
+  margin-left:0;
+}
+
+/*=== table
+---------------------------------*/
+.bar-code__table{
+  margin:0 0 10px 0;
+  width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.bar-code__table td{
+  text-align: left;
+}
+.bar-code__table td button{
+  margin-left:15px;
+}
+.bar-code__table td button:first-child{
+  margin-left:0;
+}
+.bar-code__table td:first-child,
+.bar-code__table th:first-child{
+  text-align:left;
+}
+.bar-code__table th,
+.bar-code__table td{
+  padding: 8px;
+  line-height: 18px;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+.bar-code__table th{
+  font-weight: bold;
+}
+.bar-code__table thead th{
+  vertical-align: bottom;
+}
+.bar-code__table thead:first-child tr:first-child th,
+.bar-code__table thead:first-child tr:first-child td{
+  border-top: 0;
+}
+.bar-code__table tbody + tbody{
+  border-top: 2px solid #dddddd;
+}
+.bar-code__table tbody tr:hover td,
+.bar-code__table tbody tr:hover th{
+  background-color: #f5f5f5;
+}
+.bar-code__table tbody tr td.bar-code__field:hover{
+    background-color: #c5e1f5;
+    cursor: pointer;
+}

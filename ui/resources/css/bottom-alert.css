@@ -1,0 +1,39 @@
+.bottom-alert-panel {
+    cursor: pointer;
+    z-index: 11001 !important;
+}
+.bottom-alert-panel > .x-panel-bwrap > .x-panel-body {
+    border-width: 2px 0px 0px;
+}
+.bottom-alert-normal > .x-panel-bwrap > .x-panel-body {
+    border-color: #BCBCBC;
+}
+.bottom-alert-warning > .x-panel-bwrap > .x-panel-body {
+    border-color: red;
+}
+.bottom-alert-success > .x-panel-bwrap > .x-panel-body{
+    border-color: green;
+}
+.bottom-alert-panel .x-form-display-field {
+    line-height: 30px;
+    cursor: pointer;
+    height: 30px;
+}
+.bottom-alert-panel2lines .x-form-display-field {
+    line-height: 17px;
+}
+.bottom-alert-warning .x-form-display-field {
+    color: red;
+}
+.bottom-alert-success .x-form-display-field {
+    color: green;
+}
+.bottom-alert-close-btn {
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/clear.png);
+    cursor: pointer;
+}
+.bottom-alert-close-btn:hover {
+    background-position-y: 16px;
+}

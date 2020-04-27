@@ -1,0 +1,33 @@
+.voip-grid-subrow-div {
+    padding: 5px 20px 10px 542px;
+}
+.voip-grid-subrow-div-item1 {
+    background-color: #deecfd;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+.voip-grid-subrow-div-item2 {
+    margin: 10px 0px 0px 10px;
+}
+.not-saved-voip-row {
+    color: red;
+}
+.call-record-status {
+    background: #F4F4F4;
+    user-select: none;
+    cursor: default;
+}
+.call-record-status-in-call {
+}
+
+.call-record-status img {
+    cursor: pointer;
+}
+
+.call-record-status span {
+    position: relative;
+    line-height: 24px;
+    display: inline-block;
+    top: -5px;
+    left: 5px;
+}

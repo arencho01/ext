@@ -1,0 +1,1644 @@
+/*!
+ * Ext JS Library 3.1.0
+ * Copyright(c) 2006-2009 Ext JS, LLC
+ * licensing@extjs.com
+ * http://www.extjs.com/license
+ */
+.fast-user-switch-mask {
+	background: url(../images/background.jpg);
+	z-index: 100;
+	position: absolute;
+	top:0;
+	left:0;
+	-moz-opacity: 0.9;
+	opacity: .9;
+	filter: alpha(opacity=90);
+	width: 100%;
+	height: 100%;
+	zoom: 1;
+}
+
+html, body {
+    background: url(../images/background.jpg);
+    font: normal 12px tahoma, arial, verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	overflow: hidden;
+	height: 100%;
+}
+
+.x-action-col-icon {
+    min-height: 16px;
+    min-width: 16px;
+}
+
+.start {
+	background-image: url( ../images/taskbar/black/startbutton-icon.gif ) !important;
+}
+
+.bogus {
+	background-image: url( ../images/bogus.png ) !important;
+}
+
+.logout {
+	background-image: url( ../images/logout.gif ) !important;
+}
+
+.settings {
+	background-image: url( ../images/gears.gif ) !important;
+}
+
+.two-arrows {
+	background-image: url( ../images/two-arrows.png ) !important;
+}
+
+.arrow-up {
+    background-image: url( ../../resources/images_new/arrow-up.svg ) !important;
+}
+
+.arrow-down {
+    background-image: url( ../../resources/images_new/arrow-down.svg ) !important;
+}
+
+.document-arrow {
+    background-image: url( ../../resources/images_new/document-arrow.svg ) !important;
+}
+
+.document-plus {
+    background-image: url( ../../resources/images_new/document-plus.svg) !important;
+}
+
+#dpanels {
+	width: 250px;
+	float: right;
+}
+
+#dpanels .x-panel {
+	margin: 15px;
+}
+
+#dpanels .x-date-picker {
+    border: 0 none;
+    background: transparent;
+}
+
+#dpanels .x-date-picker td.x-date-active {
+	background: #ffffff;
+}
+
+#dpanels .x-date-picker {
+	width: 100% !important;
+}
+
+#x-desktop {
+	width: 100%;
+	height: 100%;
+	border: 0 none;
+	position: relative;
+    overflow:hidden;
+    zoom:1;
+}
+
+#ux-taskbar .x-btn {
+	margin: 1px 0 0 1px;
+}
+
+#ux-taskbar-start .x-btn {
+	margin: 0;
+}
+
+#ux-taskbar button {
+	text-align: left;
+	color: #ffffff;
+}
+#title-bar-wrapper {
+	height:35px;
+}
+
+#title-bar {
+	color: #225599;
+	padding: 9px 7px;
+	font: bold 16px tahoma,arial,verdana,sans-serif;
+	float:left;
+}
+
+#x-logout {
+	float:right;
+	padding:6px 7px;
+}
+
+.x-btn-text-icon .x-btn-center .logout {
+    background: no-repeat 0 3px;
+    padding:3px 0 3px 18px;
+}
+
+#ux-taskbar {
+	background:transparent none;
+	height:30px;
+	margin:0;
+	padding:0;
+	position:relative;
+	z-index:12001;
+}
+
+.x-btn-icon .ux-taskbutton-center .x-btn-text{
+    background: no-repeat center;
+    height: 16px;
+	width: 16px;
+	cursor:pointer;
+	white-space: nowrap;
+    padding:0;
+}
+
+.x-btn-icon .ux-taskbutton-center{
+	padding:1px;
+}
+
+.x-btn-text-icon .ux-taskbutton-center .x-btn-text{
+    background: no-repeat 0 6px;
+    padding:7px 0 7px 20px;
+}
+
+.x-btn-text-icon .ux-startbutton-center .x-btn-text{
+    background: no-repeat 0 4px;
+    color:#000000 !important;
+	font-weight:bold;
+	padding:7px 0 7px 28px;
+}
+
+.ux-taskbutton-left, .ux-taskbutton-right{
+    width:4px;
+    height:28px;
+	font-size:1px;
+    line-height:1px;
+    background: url(../images/taskbar/black/taskbutton.gif) no-repeat;
+}
+.ux-taskbutton-left{
+    background-position: 0 0;
+}
+.ux-taskbutton-right{
+    background-position: 0 -28px;
+}
+.ux-taskbutton-left i, .ux-taskbutton-right i{
+	display:block;
+    width:4px;
+    overflow:hidden;
+    font-size:1px;
+    line-height:1px;
+}
+.ux-taskbutton-center{
+	background:url( ../images/taskbar/black/taskbutton.gif ) repeat-x 0 -56px;
+	vertical-align: middle;
+	text-align:center;
+	padding:0 5px;
+	cursor:pointer;
+	white-space:nowrap;
+}
+
+#ux-taskbar .ux-taskbutton-left{
+	background-position:0 0;
+}
+#ux-taskbar .ux-taskbutton-right{
+	background-position:0 -28px;
+}
+#ux-taskbar .ux-taskbutton-center{
+	background-position:0 -56px;
+}
+
+#ux-taskbar .x-btn-over .ux-taskbutton-left{
+	background-position:0 -252px;
+}
+#ux-taskbar .x-btn-over  .ux-taskbutton-right{
+	background-position:0 -280px;
+}
+#ux-taskbar .x-btn-over .ux-taskbutton-center{
+	background-position:0 -308px;
+}
+
+#ux-taskbar .x-btn-click .ux-taskbutton-left{
+	background-position:0 -168px;
+}
+
+#ux-taskbar .x-btn-click  .ux-taskbutton-right{
+	background-position:0 -196px;
+}
+
+#ux-taskbar .x-btn-click .ux-taskbutton-center{
+	background-position:0 -224px;
+}
+
+#ux-taskbar .active-win .ux-taskbutton-left{
+	background-position:0 -84px;
+}
+
+#ux-taskbar .active-win  .ux-taskbutton-right{
+	background:url( ../images/taskbar/black/taskbutton.gif ) no-repeat 0 -112px;
+}
+
+#ux-taskbar .active-win .ux-taskbutton-center{
+	background:url( ../images/taskbar/black/taskbutton.gif ) repeat-x 0 -140px;
+}
+
+#ux-taskbar .active-win .ux-taskbutton-center button {
+    color:#fff;
+}
+
+#spacer {
+	height: 25px;
+	float: left;
+	width: 0;
+	overflow: hidden;
+	margin-top: 2px;
+}
+
+.x-window-body p,.x-panel-body p {
+	padding: 10px;
+	margin: 0;
+}
+
+.icon-grid {
+    background-image:url( ../images/grid.png ) !important;
+}
+.add {
+    background-image:url(../../shared/icons/fam/add.gif) !important;
+}
+.option {
+    background-image:url(../../shared/icons/fam/plugin.gif) !important;
+}
+.remove {
+    background-image:url(../../shared/icons/fam/delete.gif) !important;
+}
+.save {
+    background-image:url(../../shared/icons/save.gif) !important;
+}
+.accordion {
+    background-image:url(../images/accordian.gif) !important;
+}
+.tabs {
+    background-image:url(../images/tabs.gif) !important;
+}
+.accept {
+    background-image:url(../../shared/icons/fam/accept.png) !important;
+}
+.cancel {
+    background-image:url(../../resources/images_new/delete.svg) !important;
+}
+.back {
+    background-image:url(../../shared/icons/fam/back.png) !important;
+}
+
+/* IM window icons */
+
+.user {
+    background-image:url( ../../shared/icons/fam/user.gif ) !important;
+}
+
+.user-add {
+    background-image:url(../../shared/icons/fam/user_add.gif) !important;
+}
+
+.user-delete {
+    background-image:url(../../shared/icons/fam/user_delete.gif) !important;
+}
+
+.connect {
+    background-image:url(../../shared/icons/fam/connect.gif) !important;
+}
+
+.user-girl {
+    background-image:url(../../shared/icons/fam/user_female.gif) !important;
+}
+
+.user-kid {
+    background-image:url(../../shared/icons/fam/user_green.gif) !important;
+}
+
+.user-suit {
+    background-image:url(../../shared/icons/fam/user_suit.gif) !important;
+}
+
+.ux-start-menu {
+	background:transparent none;
+	border:0 none;
+	padding:0;
+}
+
+.ux-start-menu-tl .x-window-header {
+	color:#f1f1f1;
+	font:bold 11px tahoma,arial,verdana,sans-serif;
+    padding:5px 0 4px 0;
+}
+
+.x-panel-tl .x-panel-icon, .ux-start-menu-tl .x-panel-icon {
+    background: no-repeat 0 4px;
+    padding-left:20px !important;
+}
+
+.ux-start-menu-tl {
+	background: transparent url( ../images/taskbar/black/start-menu-left-corners.png ) no-repeat 0 0;
+	padding-left:6px;
+    zoom:1;
+    z-index:1;
+    position:relative;
+}
+
+.ux-start-menu-tr {
+	background: transparent url( ../images/taskbar/black/start-menu-right-corners.png ) no-repeat right 0;
+	padding-right:6px;
+}
+
+.ux-start-menu-tc {
+	background: transparent url( ../images/taskbar/black/start-menu-top-bottom.png ) repeat-x 0 0;
+	overflow:hidden;
+    zoom:1;
+}
+
+.ux-start-menu-ml {
+	background: transparent url( ../images/taskbar/black/start-menu-left-right.png ) repeat-y 0 0;
+	padding-left:6px;
+    zoom:1;
+}
+
+.ux-start-menu-bc {
+	background: transparent url( ../images/taskbar/black/start-menu-top-bottom.png ) repeat-x 0 bottom;
+    zoom:1;
+}
+
+.ux-start-menu-bc .x-window-footer {
+    padding-bottom:6px;
+    zoom:1;
+    font-size:0;
+    line-height:0;
+}
+
+.ux-start-menu-bl {
+	background: transparent url( ../images/taskbar/black/start-menu-left-corners.png ) no-repeat 0 bottom;
+	padding-left:6px;
+    zoom:1;
+}
+
+.ux-start-menu-br {
+	background: transparent url( ../images/taskbar/black/start-menu-right-corners.png ) no-repeat right bottom;
+	padding-right:6px;
+    zoom:1;
+}
+
+.x-panel-nofooter .ux-start-menu-bc {
+	height:6px;
+}
+
+.ux-start-menu-splitbar-h {
+	background-color:#d0d0d0;
+}
+
+
+.ux-start-menu-bwrap, .ux-start-menu-body {
+	background:transparent none;
+	border:0 none;
+}
+
+.ux-start-menu-apps-panel {
+	background:#ffffff none;
+	border:1px solid #1e2124;
+}
+
+.ux-start-menu-tools-panel {
+	border:0 none;
+	background:transparent url( ../images/taskbar/black/start-menu-right.png ) repeat-y scroll right 0;
+}
+
+#ux-taskbar-start {
+	background:#000000 url( ../images/taskbar/black/taskbar-start-panel-bg.gif ) repeat-x left top;
+	left:0;
+	padding:0;
+	position:absolute;
+}
+
+#ux-taskbar-start .x-toolbar {
+	background: none;
+	padding:0;
+	border:0 none;
+}
+
+#ux-taskbuttons-panel {
+	background:#000000 url( ../images/taskbar/black/taskbuttons-panel-bg.gif ) repeat-x left top;
+	padding-top:0;
+	position:relative;
+}
+
+.ux-taskbuttons-strip-wrap {
+	width:100%;
+    overflow:hidden;
+    position:relative;
+    zoom:1;
+}
+
+ul.ux-taskbuttons-strip {
+	display:block;
+	width:5000px;
+    zoom:1;
+}
+
+ul.ux-taskbuttons-strip li {
+    float:left;
+    margin-left:2px;
+}
+
+
+ul.ux-taskbuttons-strip li.ux-taskbuttons-edge {
+    float:left;
+    margin:0 !important;
+    padding:0 !important;
+    border:0 none !important;
+    font-size:1px !important;
+    line-height:1px !important;
+    overflow:hidden;
+    zoom:1;
+    background:transparent !important;
+    width:1px;
+}
+
+.x-clear {
+    clear:both;
+    height:0;
+    overflow:hidden;
+    line-height:0;
+    font-size:0;
+}
+
+.x-taskbuttons-scrolling {
+	position:relative;
+}
+
+.x-taskbuttons-scrolling .ux-taskbuttons-strip-wrap {
+	margin-left:18px;
+	margin-right:18px;
+}
+
+td.ux-taskButtons-edge {
+    margin:0 !important;
+    padding:0 !important;
+    border:0 none !important;
+    font-size:1px !important;
+    line-height:1px !important;
+    overflow:hidden;
+    zoom:1;
+    background:transparent !important;
+    width:1px;
+}
+
+.ux-taskbuttons-scroller-left {
+    background: transparent url( ../images/taskbar/black/scroll-left.gif ) no-repeat -18px 0;
+    width:18px;
+    position:absolute;
+    left:1px;
+    top:0;
+    z-index:10;
+    cursor:pointer;
+}
+.ux-taskbuttons-scroller-left-over {
+    background-position: 0 0;
+}
+.ux-taskbuttons-scroller-left-disabled {
+    background-position: -18px 0;
+    opacity:.5;
+    -moz-opacity:.5;
+    filter:alpha(opacity=50);
+    cursor:default;
+}
+.ux-taskbuttons-scroller-right {
+    background: transparent url( ../images/taskbar/black/scroll-right.gif ) no-repeat 0 0;
+    width:18px;
+    position:absolute;
+    right:0;
+    top:0;
+    z-index:10;
+    cursor:pointer;
+}
+.ux-taskbuttons-scroller-right-over {
+    background-position: -18px 0;
+}
+.ux-taskbuttons-scroller-right-disabled {
+    background-position: 0 0;
+    opacity:.5;
+    -moz-opacity:.5;
+    filter:alpha(opacity=50);
+    cursor:default;
+}
+
+.ux-toolmenu-sep {
+	background-color:#18191a;
+	border-bottom:1px solid #858789;
+	display:block;
+	font-size:1px;
+	line-height:1px;
+	margin:2px 3px;
+}
+
+.ux-start-menu-tools-panel ul.x-menu-list li.x-menu-list-item a.x-menu-item {
+	color:#ffffff;
+}
+
+.ux-start-menu-tools-panel ul.x-menu-list li.x-menu-list-item .x-menu-item-active a.x-menu-item {
+	color:#000000;
+}
+
+.ux-start-menu-tools-panel .x-menu-item-active {
+	background: #525456 url( ../images/taskbar/black/item-over.gif ) repeat-x left bottom;
+	border:1px solid #000000;
+	padding: 0;
+}
+
+#ux-taskbar .x-splitbar-h {
+	background:#000000 url( ../images/taskbar/black/taskbar-split-h.gif ) no-repeat 0 0;
+	width:8px;
+}
+
+.x-window-header-text {
+	cursor:default;
+}
+
+/*
+ * Begin Start button
+ */
+.ux-startbutton-left, .ux-startbutton-right{
+    width:10px;
+	font-size:1px;
+    line-height:1px;
+    background: url(../images/taskbar/black/startbutton.gif) no-repeat;
+}
+.ux-startbutton-left{
+	height:28px;
+    background-position: 0 0;
+}
+.ux-startbutton-right{
+	height:30px;
+    background-position: 0 -28px;
+}
+.ux-startbutton-left i, .ux-startbutton-right i{
+	display:block;
+    width:10px;
+    overflow:hidden;
+    font-size:1px;
+    line-height:1px;
+}
+.ux-startbutton-center{
+	background:url( ../images/taskbar/black/startbutton.gif ) repeat-x 0 -56px;
+	vertical-align: middle;
+	text-align:center;
+	padding:0;
+	cursor:pointer;
+	white-space:nowrap;
+}
+
+#ux-taskbar .ux-startbutton-left{
+	background-position:0 0;
+}
+
+#ux-taskbar .ux-startbutton-right{
+	background-position:0 -30px;
+}
+
+#ux-taskbar .ux-startbutton-center{
+	background-position:0 -60px;
+}
+
+#ux-taskbar .x-btn-over .ux-startbutton-left{
+	background-position:0 -270px;
+}
+#ux-taskbar .x-btn-over  .ux-startbutton-right{
+	background-position:0 -300px;
+}
+#ux-taskbar .x-btn-over .ux-startbutton-center{
+	background-position:0 -330px;
+}
+
+#ux-taskbar .x-btn-click .ux-startbutton-left{
+	background-position:0 -180px;
+}
+#ux-taskbar .x-btn-click  .ux-startbutton-right{
+	background-position:0 -210px;
+}
+#ux-taskbar .x-btn-click .ux-startbutton-center{
+	background-position:0 -240px;
+}
+
+#ux-taskbar .active-win .ux-startbutton-left{
+	background-position:0 -90px;
+}
+#ux-taskbar .active-win  .ux-startbutton-right{
+	background:url( ../images/taskbar/black/startbutton.gif ) no-repeat 0 -120px;
+}
+#ux-taskbar .active-win .ux-startbutton-center{
+	background:url( ../images/taskbar/black/startbutton.gif ) repeat-x 0 -150px;
+}
+#ux-taskbar .active-win .ux-startbutton-center button {
+    color:#fff;
+}
+/*
+ * End Start button
+ */
+
+.x-resizable-proxy{
+    background:#C7DFFC;
+    opacity:.5;
+    -moz-opacity:.5;
+    filter:alpha(opacity=50);
+    border: 1px solid #3b5a82;
+}
+
+/* Desktop Shortcuts */
+#x-shortcuts dt {
+    float:left;
+    margin:15px 0 0 15px;
+    width:64px;
+    font:normal 10px tahoma,arial,verdana,sans-serif;
+    text-align:center;
+    zoom:1;
+    display:block;
+}
+#x-shortcuts dt a {
+    width:64px;
+    display:block;
+    color:white;
+    text-decoration:none;
+}
+#x-shortcuts dt div {
+    width:100%;
+    color:white;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    cursor:pointer;
+}
+.ext-ie #x-shortcuts dt img {
+    background:transparent !important;
+}
+
+
+.user_add {background-image: url( ../images/user_add.gif) !important;}
+.user_delete {background-image: url( ../images/user_delete.gif) !important;}
+.user_edit {background-image: url( ../../resources/images_new/edit.svg) !important;}
+.user_edit:focus { width: 14px !important;}
+
+
+.display-none {display:none}
+.x-grid3-td-nomargin1 div,
+    .x-grid3-td-nomargin2 div,
+    .x-grid3-td-nomargin3 div,
+    .x-grid3-td-nomargin4 div,
+    .x-grid3-td-nomargin5 div,
+    .x-grid3-td-nomargin6 div
+    .x-grid3-td-nomargin7 div {
+        padding:0;
+        margin:0
+}
+.month_grid .x-grid3-col {height:70px; border-left:1px solid #EDEDED}
+.aaweek_grid .x-grid3-col, .grid-calendar .x-grid3-col {border-left:1px solid #EDEDED}
+.note {
+	padding:3px !important;
+	white-space:normal;
+	aaaposition:relative;
+	float:left;
+	background-color: rgb(160, 200, 255); border: 1px solid #80A0FD;
+	-moz-border-radius:8px;
+	z-index: 1000;
+}
+.calend {
+	background-color: transparent; border: 2px solid #7B6;
+}
+.month_grid .big_day {
+	aaacolor:red;
+	float:right;
+	text-align:right;
+	aaapadding-top: 4px;
+	font-weight: bolder;
+	font-size: 1.2em;
+}
+.month_grid hr {
+	color: silver;
+	margin: 0;
+}
+
+.GrafikGrid .x-grid3-cell-inner {
+	white-space:normal !important;
+}
+.GrafikGrid .x-grid3-row-table  .x-grid3-td-doctor {background-color:#F2F2F2}
+
+.goodSearch {
+	margin-top: 4px;
+	margin-left: 4px;
+}
+
+
+.calendar-shortcut-img,
+.goods-shortcut-img,
+.cassa-shortcut-img,
+.goods-shortcut-img,
+.stores-shortcut-img,
+.invoice-shortcut-img,
+.reports-shortcut-img,
+.marketing-shortcut-img,
+.AccessRights-shortcut-img,
+.clients-shortcut-img,
+.medicalcards-shortcut-img,
+.forum-shortcut-img,
+.registry-shortcut-img{
+    background-size: 56% 70% !important;
+    -o-background-size: 56% 70% !important;
+    -webkit-background-size: 56% 70% !important;
+    -khtml-background-size: 56% 70% !important;
+    -moz-background-size: 56% 70% !important;
+    background-repeat: no-repeat !important;
+    background-position: top !important;
+    width: 100% !important;
+}
+.cassa-shortcut-img{
+    background-image:url(../images/mainicons/cassa.png) !important;
+}
+.forum-shortcut-img{
+    background-image:url(../images/mainicons/forum.png) !important;
+     background-size: 70% 70% !important;
+    -o-background-size: 70% 70% !important;
+    -webkit-background-size: 70% 70% !important;
+    -khtml-background-size: 70% 70% !important;
+    -moz-background-size: 70% 70% !important;
+}
+.calendar-shortcut-img {
+    background-image:url(../images/mainicons/calendar.png) !important;
+}
+.goods-shortcut-img {
+    background-image:url(../images/mainicons/goods.png) !important;
+     background-size: 55% 70% !important;
+    -o-background-size: 55% 70% !important;
+    -webkit-background-size: 55% 70% !important;
+    -khtml-background-size: 55% 70% !important;
+    -moz-background-size: 55% 70% !important;
+}
+.stores-shortcut-img {
+    background-image:url(../images/mainicons/stores.png) !important;
+}
+.invoice-shortcut-img {
+    background-image:url(../images/mainicons/invoice.png) !important;
+}
+.reports-shortcut-img {
+    background-image:url(../images/mainicons/reports.png) !important;
+}
+.marketing-shortcut-img {
+    background-image:url(../images/mainicons/marketing.png) !important;
+}
+.AccessRights-shortcut-img {
+    background-image:url(../images/mainicons/accessrights.png) !important;
+    background-size: 45% 75% !important;
+    -o-background-size: 45% 75% !important;
+    -webkit-background-size: 45% 75% !important;
+    -khtml-background-size: 45% 75% !important;
+    -moz-background-size: 45% 75% !important;
+}
+.clients-shortcut-img {
+    background-image:url(../images/mainicons/clients.png) !important;
+    background-size: 45% 75% !important;
+    -o-background-size: 45% 75% !important;
+    -webkit-background-size: 45% 75% !important;
+    -khtml-background-size: 45% 75% !important;
+    -moz-background-size: 45% 75% !important;
+}
+.medicalcards-shortcut-img {
+    background-image:url(../images/mainicons/medicalcards.png) !important;
+     background-size: 55% 70% !important;
+    -o-background-size: 55% 70% !important;
+    -webkit-background-size: 55% 70% !important;
+    -khtml-background-size: 55% 70% !important;
+    -moz-background-size: 55% 70% !important;
+}
+.registry-shortcut-img {
+    background-image:url(../images/mainicons/registry.png) !important;
+    background-size: 60% 80% !important;
+    -o-background-size: 60% 80% !important;
+    -webkit-background-size: 60% 80% !important;
+    -khtml-background-size: 60% 80% !important;
+    -moz-background-size: 60% 80% !important;
+}
+.back-shortcut-img {
+    background-image:url(../images/mainicons/back.png) !important;
+    background-size: 100% 100% !important;
+    -o-background-size: 100% 100% !important;
+    -webkit-background-size: 100% 100% !important;
+    -khtml-background-size: 100% 100% !important;
+    -moz-background-size: 100% 100% !important;
+}
+
+.workspace-shortcut {
+    width:96px;
+    height:112px;
+    margin:10px;
+    float: left;
+    cursor: pointer;
+}
+.workspace-shortcut-over {
+    background-color:#DFE8F6;
+}
+.workspace-shortcut-selected {
+    background-color:#CFD8E6;
+}
+.workspace-shortcut-icon {
+    height:96px;
+    background-size: 100% 100% !important;
+    -o-background-size: 100% 100% !important;
+    -webkit-background-size: 100% 100% !important;
+    -khtml-background-size: 100% 100% !important;
+    -moz-background-size: 100% 100% !important;
+}
+.workspace-shortcut-title {
+    height:16px;
+    line-height:16px;
+    overflow:hidden;
+    text-align: center;
+}
+
+.x-btn button {
+    height: 100%;
+}
+
+.x-btn-text-icon .x-btn-icon-small-top .x-btn-text {
+    background-position: center 0;
+    background-repeat: no-repeat;
+    padding-top: 55px;
+}
+
+.top-panel-background{
+    background-image: url(../images/topfont.png)!important;
+    background-repeat: repeat;
+    background-color: #134A9D !important;
+}
+.top-panel-text{
+    font-weight: bold;
+    color: white;
+}
+
+.link-text{
+    text-decoration: underline;
+    cursor:pointer;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.div-inline{
+    float:left;
+}
+.bug-img-div{
+    width:15px;
+    height:15px;
+}
+.-clear-filter-item-button-:hover{
+    opacity: 1;
+}
+.-clear-filter-item-button-{
+    opacity: 0.5;
+}
+.-clear-filter-item-button-hidden-{
+    opacity: 0 !important;
+}
+.-ext4-clear-filter-item-button-{
+    opacity: 0.25;
+    padding: 6px 6px 3px 6px;
+}
+.-ext4-clear-filter-item-button-:hover{
+    opacity: 1;
+    padding: 6px 6px 3px 6px;
+}
+.-filter-item-{
+    margin-bottom: 4px;
+    width: 165px;
+}
+.-text-filter-item-{
+    margin-bottom: 4px;
+    width: 182px;
+}
+.-today-text-filter-item-{
+    margin-bottom: 4px;
+    width: 182px;
+}
+#planned-client-hours
+, #planned-client-minutes{
+    font-size: 1.2em;
+}
+#-goto-medcard-btn-{
+    font-size: 1.02em;
+}
+.-medcards-filter-labels-margin-{
+    margin-left: 10px;
+    margin-right: 5px;
+    font-size: 1em;
+}
+.planned-client-add-btn-img {
+    background-image:url(../images/mainicons/calendar_add.png) !important;
+    background-size: 45% 75% !important;
+    -moz-background-size: 45% 75% !important;
+    -o-background-size: 45% 75% !important;
+    -webkit-background-size: 45% 75% !important;
+    -khtml-background-size: 45% 75% !important;
+}
+.planned-client-add-btn-img2 {
+    background-image:url(../images/mainicons/calendar_add.png) !important;
+    background-size: 70% 75% !important;
+    -moz-background-size: 70% 75% !important;
+    -o-background-size: 70% 75% !important;
+    -webkit-background-size: 70% 75% !important;
+    -khtml-background-size: 70% 75% !important;
+}
+.client-add-btn-img {
+    background-image:url(../images/mainicons/client_add.png) !important;
+    background-size: 75% 75% !important;
+    -moz-background-size: 75% 75% !important;
+    -o-background-size: 75% 75% !important;
+    -webkit-background-size: 75% 75% !important;
+    -khtml-background-size: 75% 75% !important;
+}
+.client-edit-btn-img {
+    background-image:url(../images/mainicons/edit_client.png) !important;
+    background-size: 45% 75% !important;
+    -moz-background-size: 45% 75% !important;
+    -o-background-size: 45% 75% !important;
+    -webkit-background-size: 45% 75% !important;
+    -khtml-background-size: 45% 75% !important;
+}
+.client-delete-btn-img {
+    background-image:url(../images/mainicons/delete_client.png) !important;
+    background-size: 85% 75% !important;
+    -moz-background-size: 85% 75% !important;
+    -o-background-size: 85% 75% !important;
+    -webkit-background-size: 85% 75% !important;
+    -khtml-background-size: 85% 75% !important;
+}
+.simple-lable{
+    font-size: 1em;
+}
+.custom-lable{
+    margin-top: 3px;
+}
+.today-filter-items{
+    margin-top: 5px;
+}
+.fmr-item-today{
+    padding-left: 0px;
+}
+.today-filter-label{
+    margin-top: 5px;
+    width: 188px;
+}
+.forum-theme-icon{
+   background-image: url("../images/mainicons/message.png") !important;
+    background-repeat: no-repeat;
+    float: left;
+    height: 25px;
+    margin-bottom: -2px;
+    margin-left: 3px;
+    margin-top: 3px;
+    width: 25px;
+    background-size: 90% 90% !important;
+    -moz-background-size: 90% 90%  !important;
+    -o-background-size: 90% 90%  !important;
+    -webkit-background-size: 90% 90%  !important;
+    -khtml-background-size: 90% 90%  !important;
+}
+.forum-theme-name{
+    float: left;
+    font-size: 1.2em;
+    padding: 3px;
+    width: 222px;
+}
+.forum-theme-item{
+    width: 258px;
+    border-bottom: 1px dotted;
+    border-color: #A3BAE9;
+    border-top: 1px none;
+    border-left: 1px none;
+    border-right: 1px none;
+    vertical-align : middle;
+}
+.forum-message-icon{
+    background-image:url(../images/mainicons/message.png) !important;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: 100% 100% !important;
+    -moz-background-size: 100% 100%  !important;
+    -o-background-size: 100% 100%  !important;
+    -webkit-background-size: 100% 100%  !important;
+    -khtml-background-size: 100% 100%  !important;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.forum-comments-icon{
+    background-image:url(../images/mainicons/comments.png) !important;
+    background-repeat: no-repeat;
+    height: 36px;
+    width: 36px;
+    background-size: 100% 100% !important;
+    -moz-background-size: 100% 100%  !important;
+    -o-background-size: 100% 100%  !important;
+    -webkit-background-size: 100% 100%  !important;
+    -khtml-background-size: 100% 100%  !important;
+}
+.forum-message-name{
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+}
+.forum-message-item{
+    width: 100%;
+    border-bottom: 1px dotted;
+    border-color: #A3BAE9;
+    border-top: 1px none;
+    border-left: 1px none;
+    border-right: 1px none;
+}
+.forum-message-item-full{
+    width: 100%;
+}
+.forum-comments-count{
+    padding-top: 5px;
+    font-weight: bold;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+.forum-comment-user-icon{
+    background-image:url(../images/mainicons/user.gif) !important;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    background-size: 100% 100% !important;
+    -moz-background-size: 100% 100%  !important;
+    -o-background-size: 100% 100%  !important;
+    -webkit-background-size: 100% 100%  !important;
+    -khtml-background-size: 100% 100%  !important;
+    padding: 10px;
+}
+.forum-comment-user-info{
+    padding: 10px;
+    width: 110px;
+}
+.forum-comment{
+    padding: 10px;
+}
+.forum-comment-item{
+    border-bottom: 1px dotted;
+    border-color: #A3BAE9;
+    border-top: 1px none;
+    border-left: 1px none;
+    border-right: 1px none;
+}
+.forum-comment-edit-delete-links{
+    color: blue;
+}
+.navigation-label{
+    color:#105CB6;
+    font-size: 1em !important;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.top-padding-bar-button{
+    background-image: url("../images/default/button/btn.gif") !important;
+    background: none repeat-x scroll 0 -1096px transparent !important;
+    padding: 0 !important;
+    text-align: center !important;
+    font: 1em arial,tahoma,helvetica,sans-serif !important;
+    border-color: black;
+}
+.wall-button{
+    right: 0;
+    position: fixed;
+    width: 30px;
+    height: 150px;
+}
+.-wall-dataview-messages-panel-{
+    border-left: 1px dotted #A3BAE9;
+
+}
+.wall-theme-item{
+    border-bottom: 1px dotted;
+    font-size: 14px;
+    padding: 5px;
+    border-color: #A3BAE9;
+    border-top: 1px none;
+    border-left: 1px none;
+    border-right: 1px none;
+    vertical-align : middle;
+}
+.wall-message-user-icon {
+        background-image:url(../images/mainicons/user.gif) !important;
+        background-repeat: no-repeat;
+        height: 40px;
+        width: 40px;
+        background-size: 100% 100% !important;
+        -moz-background-size: 100% 100%  !important;
+        -o-background-size: 100% 100%  !important;
+        -webkit-background-size: 100% 100%  !important;
+        -khtml-background-size: 100% 100%  !important;
+        padding: 10px;
+}
+.wall-comment-user-icon {
+        background-image:url(../images/mainicons/user.gif) !important;
+        background-repeat: no-repeat;
+        height: 25px;
+        width: 25px;
+        background-size: 100% 100% !important;
+        -moz-background-size: 100% 100%  !important;
+        -o-background-size: 100% 100%  !important;
+        -webkit-background-size: 100% 100%  !important;
+        -khtml-background-size: 100% 100%  !important;
+        padding: 10px;
+}
+.wall-message-bottom-border {
+        border-bottom: 1px dotted #A3BAE9;
+        border-top: 1px none;
+        border-left: 1px none;
+        border-right: 1px none;
+}
+.wall-message-property{
+    width: 70px;
+    color: #333333;
+    text-align: center;
+}
+.wall-message-property-value{
+    width: 130px;
+    color: #105CB6;
+    text-align: center;
+    background-color: #F0F2F3;
+}
+
+.J-J5-Ji {
+    display: inline-block;
+    position: relative;
+}
+
+.D .J-Zh-I {
+    margin-bottom: 2px;
+}
+.W6eDmd {
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+.J-J5-Ji {
+    display: inline-block;
+    position: relative;
+}
+.J-Zh-I,
+.ws-menu-item.J-Zh-I {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #fff;
+    border: 1px solid #A0A0A0;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    color: #202020;
+    cursor: default;
+    font: 100% arial,sans-serif;
+    margin: 0 3px 0 0;
+    outline: medium none;
+    padding: 3px 8px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+
+.redbtngradient {
+	text-shadow: 0 1px 0 #DD0000;
+	background: -moz-linear-gradient(center top , #FF0000, #FDA7A7) repeat scroll 0 0 transparent;
+	background: -webkit-gradient(linear,left top, left bottom, from(#FF0000), to(#FDA7A7));
+	background: -o-linear-gradient(#FF0000,#FDA7A7);
+}
+.W6eDmd {
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+.J-Zh-I {
+    border-style: solid;
+    color: #000000;
+    cursor: default;
+    font: 100% arial,sans-serif;
+    text-align: center;
+    white-space: nowrap;
+}
+.nwE2fc {
+    width: 0;
+}
+.J-J5-Ji {
+    display: inline-block;
+    position: relative;
+}
+.J-Zh-I:hover {
+    border-color: #939393 !important;
+}
+.J-Zh-I:active {
+    background: -moz-linear-gradient(center top, #EEEEEE, #F9F9F9) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear,left top, left bottom, from(#EEEEEE), to(#F9F9F9));
+    background: -o-linear-gradient(#EEEEEE,#F9F9F9);
+    border-color: #444444 !important;
+}
+.J-Zh-I-img{
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: -moz-linear-gradient(center top , #F9F9F9, #E3E3E3) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear,left top, left bottom, from(#F9F9F9), to(#E3E3E3));
+    background: -o-linear-gradient(#F9F9F9,#E3E3E3);
+    border-color: #CCCCCC #BBBBBB #A0A0A0;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: #000000;
+    cursor: default;
+    font: 100% arial,sans-serif;
+    margin: 0 3px 0 0;
+    outline: medium none;
+    padding: 3px 4px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.J-Zh-I-img:hover {
+    border-color: #939393 !important;
+}
+.J-Zh-I-img:active {
+    background: -moz-linear-gradient(center top, #EEEEEE, #F9F9F9) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear,left top, left bottom, from(#EEEEEE), to(#F9F9F9));
+    background: -o-linear-gradient(#EEEEEE,#F9F9F9);
+    border-color: #444444 !important;
+}
+
+.x-layout-split-west .x-layout-mini {
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+    opacity: 1;
+    height: 35px;
+    width: 10px;
+    margin-left: -10px;
+}
+
+.x-layout-cmini-west .x-layout-mini {
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+    opacity: 1;
+    height: 35px;
+    width: 10px;
+}
+
+
+.x-layout-split-north .x-layout-mini {
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+    opacity: 1;
+    height: 10px;
+    width: 35px;
+    margin-top: -10px;
+}
+
+.x-layout-cmini-north .x-layout-mini {
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+    opacity: 1;
+    height: 10px;
+    width: 35px;
+}
+
+.x-layout-split-south .x-layout-mini {
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+    opacity: 1;
+    height: 10px;
+    width: 35px;
+    margin-top: 5px;
+}
+
+.x-layout-cmini-south .x-layout-mini {
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+    opacity: 1;
+    height: 10px;
+    width: 35px;
+}
+
+.x-layout-cmini-east .x-layout-mini {
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+    opacity: 1;
+    height: 35px;
+    width: 10px;
+}
+
+.x-layout-split-east .x-layout-mini {
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+    height: 35px;
+    margin-left: 5px;
+    margin-top: -10px;
+    opacity: 1;
+    width: 10px;
+}
+
+.x-layout-cmini-west, .x-layout-cmini-east {
+    width: 10px !important;
+}
+.x-layout-cmini-north, .x-layout-cmini-south {
+    height: 10px !important;
+}
+
+.history-template-item{
+    color: #105CB6;
+    cursor: pointer;
+}
+.history-template-header, .history-template-item{
+    margin-bottom: 8px;
+}
+
+.visa-payment-combo{
+    background-image:url(../images/visa_mastercard_logo2.gif) !important;
+    background-repeat: no-repeat;
+    height: 32px !important;
+    width: 102px !important;
+    background-size: 100% 100% !important;
+    -o-background-size: 100% 100% !important;
+    -webkit-background-size: 100% 100% !important;
+    -khtml-background-size: 100% 100% !important;
+    -moz-background-size: 100% 100% !important;
+}
+.cassa-prihod-column{
+    background-color: #FFFF99;
+}
+.cassa-rashod-column{
+    background-color: #DEDCDC;
+}
+.invoice-description-field{
+    border-color: red;
+    border-width: 4px;
+}
+.ext-cal-holiday-days{
+    color: red !important;
+    font-weight: bold !important;
+}
+.c-dt, .c-tm{
+    color:grey;
+}
+.c-me{
+    color:black;
+    font-weight: bold;
+}
+.c-ot{
+    color:#15428b;
+    font-weight: bold;
+}
+.clients-today-tab {
+    margin-left: 540px !important;
+}
+.clients-today-tab-hospital {
+	margin-left: 430px !important;
+}
+.clients-today-tab-medcard {
+	margin-left: 437px !important;
+}
+.clients-today-tab-hospital-medcard {
+	margin-left: 335px !important;
+}
+.clients-today-tab-count, .clients-hospital-tab-count, .clients-planned-tab-count,
+.fast-calling-tab-count {
+    width: 10px;
+    height: 17px;
+    position: absolute;
+    margin-left: -8px;
+    margin-top: 2px;
+    color: red;
+    font-weight: bold;
+    text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white;
+}
+
+#invoice-timer-button-div.critical .J-Zh-I {
+    background: -moz-linear-gradient(center top , #FF0000, #FDA7A7) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear,left top, left bottom, from(#FF0000), to(#FDA7A7));
+    background: -o-linear-gradient(#FF0000,#FDA7A7);
+}
+#medcard-timer-button-div{
+	position: absolute;
+	right: -16px;
+	top: 57px;
+	-moz-transform: rotate(-90.0deg);
+	-webkit-transform: rotate(-90.0deg);
+}
+
+#invoice-timer-button-div,
+#inventar-timer-button-div,
+#payment-timer-button-div {
+	position: absolute;
+	right: -16px;
+	-moz-transform: rotate(-90.0deg);
+	-webkit-transform: rotate(-90.0deg);
+	display: block;
+	top: 130px;
+	margin-right: 4px;
+}
+
+#medcard-timer-button-div.critical .J-Zh-I {
+    background: -moz-linear-gradient(center top , #FF0000, #FDA7A7) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear,left top, left bottom, from(#FF0000), to(#FDA7A7));
+    background: -o-linear-gradient(#FF0000,#FDA7A7);
+}
+#payment-timer-button-div.critical .J-Zh-I {
+	background: -moz-linear-gradient(center top , #FF0000, #FDA7A7) repeat scroll 0 0 transparent;
+	background: -webkit-gradient(linear,left top, left bottom, from(#FF0000), to(#FDA7A7));
+	background: -o-linear-gradient(#FF0000,#FDA7A7);
+}
+
+#referal-main-button-div {
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	margin-top: -170px;
+}
+
+#settings-main-button-div {
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    -moz-transform: rotate(-90.0deg);
+    -webkit-transform: rotate(-90.0deg);
+    margin-top: -90px;
+}
+
+#import-main-button-div {
+    position: absolute;
+    right: -27px;
+    top: 50%;
+    -moz-transform: rotate(-90.0deg);
+    -webkit-transform: rotate(-90.0deg);
+    margin-top: 154px;
+}
+
+#reports-main-button-div {
+    position: absolute;
+    right: -27px;
+    top: 50%;
+    -moz-transform: rotate(-90.0deg);
+    -webkit-transform: rotate(-90.0deg);
+    margin-top: 18px;
+}
+
+#gear-main-button-div {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    -moz-transform: rotate(-90.0deg);
+    -webkit-transform: rotate(-90.0deg);
+    margin-top: 86px;
+}
+
+#listen-ami-button-div {
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    width: 33px;
+    margin-top: 224px;
+}
+
+#listen-ami-button-div img {
+    background-image: url(/ui/resources/images_new/ami-call.svg);
+}
+
+#listen-ami-button-div img.disabled-call {
+    filter: opacity(0.65) contrast(0%);
+    -webkit-filter: opacity(0.65) contrast(0%);    
+}
+
+#referal-gift-big-picture{
+	width: 124px;
+	height: 124px;
+	margin: 0 auto;
+	background-color: #D9EEE4;
+	border-radius: 50%;
+	background-image: url(/ui/desktop/images/gift-big.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.referal-vatmanager-ico {
+	position: relative;
+	top: 9px;
+	left: 2px;
+}
+
+.referal-vatmanager-name {
+	color: #416AA3;
+}
+
+.referal-frame-ico {
+	position: relative;
+	top: -11px;
+	left: 4px;
+}
+
+.report-result-table{
+    width: 100%;
+}
+.report-row {
+    font-weight: normal;
+}
+.report-cell {
+    padding: 5px;
+}
+.report-cell-value {
+    font-weight: normal;
+}
+
+.x4-grid-row.gray-row td {
+    background-color: #DEDCDC !important;
+}
+
+.maximize-btn {
+	width: 24px;
+	height: 24px;
+	background-image: url("../../resources/images_new/maximize.svg");
+}
+
+.minimize-btn {
+	width: 24px;
+	height: 24px;
+	background-image: url("../../resources/images_new/minimize.svg");
+}
+
+div.minialert{
+	height: 20px;
+	width: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	background-color: red;
+	padding: 3px;
+	text-align: center;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+#version-vetmanager-timer-button-div {
+	position: fixed;
+	top:90px;
+	left:0px;
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.timer-pulse {
+	position: relative;
+	border: none;
+	box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
+	cursor: pointer;
+	-webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+	-moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+	-ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+	animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.timer-pulse:hover
+{
+	-webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
+}
+
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+
+#version-vetmanager-timer-button-div.critical-alert .QwThFe { /* J-Zh-I*/
+	background: rgba(232, 76, 61, 0.3);
+	animation-name: critical-alert;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes critical-alert {
+	0% {
+		background: rgba(232, 76, 61, 0.3);
+	}
+	50% {
+		background: rgba(232, 76, 61, 0.9);
+	}
+	100 {
+		background: rgba(232, 76, 61, 0.3);
+	}
+}

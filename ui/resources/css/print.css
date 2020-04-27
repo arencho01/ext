@@ -1,0 +1,9 @@
+h1 {font-size: 20px;}
+h2 {font-size: 18px;}
+h1, h2 {width: 100%;}
+span.report_time {float: right;}
+table {width: 100%; border: 1px solid black;border-collapse: collapse; }
+th, td {border: 1px solid black; padding: 5px;}
+tr.discount td { border-top-width: 2px;}
+td {text-align: right;}
+td.left {text-align: left;}

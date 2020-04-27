@@ -1,0 +1,44 @@
+a.good-link {
+    font-weight: bold;
+}
+div.fst {
+    border: 1px solid black;
+    padding: 10px;
+}
+@media print {
+    .page-break-element {
+        page-break-after: always;
+    }
+    .page-break-element-text {
+        display:none;
+    }
+}
+@media screen {
+    .page-break-element-text {
+        display: inline-block;
+        position: relative;
+        font: normal 100% sans-serif;
+    }
+    .page-break-element {
+        line-height: 0.5;
+        text-align: center;
+        margin: 0 0 2em 0;
+    }
+    .page-break-element .page-break-element-text:before,
+    .page-break-element .page-break-element-text:after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        background: linear-gradient(to right, transparent, #818078, transparent);
+        top: 50%;
+        width: 100%;
+    }
+    .page-break-element .page-break-element-text:before {
+        right: 100%;
+        margin-right: 15px;
+    }
+    .page-break-element .page-break-element-text:after {
+        left: 100%;
+        margin-left: 15px;
+    }
+}

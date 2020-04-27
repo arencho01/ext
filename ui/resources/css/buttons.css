@@ -1,0 +1,264 @@
+.x-toolbar .x-item-disabled {
+    opacity: .8;
+}
+
+.x-toolbar .x-item-disabled img,
+.x-toolbar .x-item-disabled.vet-button img,
+.x-item-disabled.vet-button img{
+    filter: opacity(0.65) contrast(0%);
+    -webkit-filter: opacity(0.65) contrast(0%);    
+}
+
+.x-item-disabled.vet-button {
+    opacity: .8;
+}
+
+.vet-icon-button-disable-by-icon.x-item-disabled {
+    opacity: 0;
+}
+
+.vet-icon-button-disable-by-icon.x-item-disabled {
+    margin-left: -30px !important;
+    z-index: -100;
+    position: relative;
+}
+
+.x-form-field-wrap.x-form-field-trigger-wrap  input[type="text"]{
+    background: #fff;
+}
+
+.vet-button,
+.x4-btn  {
+    background: #FFF;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
+    border: 1px solid #A0A0A0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 4px;   
+    display: -webkit-box;   
+    display: -ms-flexbox;   
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; 
+    box-sizing: border-box;
+    color: #202020;
+    padding: 3px;
+    font-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+[id^="pagingtoolbar"][id$="targetEl"] .x4-btn {
+    background: none;
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    min-width: 0;
+    min-height: 0;
+    border: none;
+    border-radius: 0;
+    padding: 2px;
+}
+
+.x4-btn span {
+    background-position:  50%;
+}
+
+.x4-btn .x4-btn-icon {
+    margin: auto;
+} 
+
+.x4-btn.-ext4-clear-filter-item-button-:hover {
+    padding: 3px;
+}
+
+.vet-button[class*='-text-button'],
+[id*="graphicreportpanel"] .x4-btn.x4-noicon {
+    background-color:  #E8F2FF;
+}
+
+.x-toolbar .vet-button[class*='-text-button'],
+.x-panel-fbar .vet-button[class*='-text-button'] {
+    background-color:  #fff;
+}
+
+[id*='-main-button-div'] .vet-button[class*='-text-button'],
+[id*='-timer-button-div'] .vet-button[class*='-text-button']  {
+    background-color:  #fff;
+}
+
+.x4-btn-pressed,
+[id*="graphicreportpanel"] .x4-btn.x4-btn-pressed {
+    background-color:#bbd9ff;
+}
+
+.x-panel-fbar .vet-button[class*='-text-button'] {
+    width: auto !important;
+}
+
+.vet-button > img {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.vet-button span ,
+.x4-btn span {
+    font-size: 18px;
+    color: #202020;
+    line-height: 1;
+}
+
+.x-toolbar-cell + .x-toolbar-cell .vet-button,
+.x-toolbar-cell + .x-toolbar-cell .x4-btn {
+    margin-left: 5px;
+}
+
+.vet-icon-text-button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.vet-icon-text-button  img {
+    margin-right: 5px;
+    width: auto;
+}
+
+.vet-icon-text-button  span + img {
+    margin-right: 5px;
+}
+
+.vet-icon-text-button,
+.vet-text-button ,
+.x4-btn.x4-noicon {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.x4-btn-default-toolbar-small-noicon .x4-btn-inner{
+    font-size: 16px;
+}
+
+.vet-form-button.x4-btn {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.x-form-field-trigger-wrap ~ .vet-button,
+.x-form-field ~ .vet-button {
+    margin-left: 0;
+    -webkit-transform: translateX(3px);
+        -ms-transform: translateX(3px);
+            transform: translateX(3px);
+} 
+
+.x-form-field-trigger-wrap ~ .vet-button + .vet-button,
+.x-form-field ~ .vet-button + .vet-button {
+    margin-left: 3px;
+} 
+
+img[src$="payed_invoices.svg"],
+img[src$="card_unique.svg"],
+img[src$="paid.svg"] {
+    vertical-align: bottom;
+}
+
+.x4-item-disabled .x4-tbar-page-first,
+.x4-item-disabled .x4-tbar-page-prev,
+.x4-item-disabled .x4-tbar-page-next,
+.x4-item-disabled .x4-tbar-page-last {
+    filter: opacity(0.65) contrast(0%);
+    -webkit-filter: opacity(0.65) contrast(0%);  
+}
+
+.x4-item-disabled .x4-tbar-page-first,
+.x4-tbar-page-first {
+    background-image: url(../images_new/page-first.svg) !important;
+}
+
+.x4-item-disabled .x4-tbar-page-prev,
+.x4-tbar-page-prev {
+    background-image: url(../images_new/page-prev.svg) !important;
+}
+
+.x4-item-disabled .x4-tbar-page-next,
+.x4-tbar-page-next{
+    background-image: url(../images_new/page-next.svg) !important;
+}
+
+.x4-item-disabled .x4-tbar-page-last,
+.x4-tbar-page-last {
+    background-image: url(../images_new/page-last.svg) !important;
+}
+
+.x4-tbar-loading {
+    background-image: url(../images_new/refresh.svg) !important;
+}
+
+html img.x4-tool-expand-left, html img.x4-tool-collapse-left,
+.x4-tool-over img.x4-tool-expand-left,
+.x4-tool-over img.x4-tool-collapse-left {
+    background-image: url(../images_new/arrow-expand.svg);
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+#calendarPanel-day-hd .ext-cal-gutter .vet-icon-text-button img{
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 30px;
+    max-height: 30px;
+    margin: 0;
+}
+
+#calendarPanel-day-hd .ext-cal-gutter .vet-icon-text-button {
+    min-width: 32px;
+    min-height: 32px;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    max-width: 32px;
+    max-height: 32px;  
+    margin: auto;  
+}
+.vet-button:focus:not([class*="x-item-disabled"]),
+.x4-btn:focus:not([class*="x-item-disabled"]) {
+   background-color: #d8f2ff;     
+   border-color: #6d9cd9;
+}
+
+.vet-button:hover:not([class*="x-item-disabled"]),
+.x4-btn:hover:not([class*="x-item-disabled"]) {
+    background-color: #ebf5ff;
+    border-color: #6d9cd9;    
+    
+
+}
+
+.vet-button:active:not([class*="x-item-disabled"]),
+.x4-btn:active:not([class*="x-item-disabled"]) {
+    background-color: #cee5fe;    
+    border-color: #6d9cd9;    
+}
+
+.x4-green-button {
+    background-color: #1b900f;
+}
+
+.x4-green-button span{
+    color: white !important;
+}

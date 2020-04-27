@@ -1,0 +1,25 @@
+html, body {
+	background:#3d71b8;
+    font: normal 12px tahoma, arial, verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	overflow: hidden;
+	height: 100%;
+}
+
+#x-desktop {
+	width: 100%;
+	height: 100%;
+	border: 0 none;
+	position: relative;
+    overflow:hidden;
+    zoom:1;
+}
+
+.login-form-bottom-navigation-links {
+	margin-left: auto;
+	margin-right: auto;
+	left: 0 !important;
+	right: 0;
+}

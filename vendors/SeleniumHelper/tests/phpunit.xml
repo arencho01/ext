@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="bootstrap.php"
+         syntaxCheck="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="true"         
+         >
+    <testsuites>
+        <testsuite name="Tests Vetmanager">
+            <directory suffix=".php">unit</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <blacklist>
+            <directory suffix=".php">/usr/share/php</directory>
+            <directory suffix=".php">../build</directory>
+        </blacklist>
+    </filter>
+
+    <logging>
+        <log type="coverage-html" target="../build/coverage" title="SeleniumHelper"
+          charset="UTF-8" yui="true" highlight="true"
+          lowUpperBound="35" highLowerBound="70"/>
+        <log type="coverage-clover" target="../build/reports/php/clover.xml"/>
+        <log type="junit" target="../build/reports/php/junit.xml" logIncompleteSkipped="false"/>
+        <log type="testdox-html" target="../build/reports/docs/testdox.html"/>
+    </logging>
+    
+</phpunit>

@@ -1,0 +1,53 @@
+.normal-state div, .normal-state-row, .normal-state-row .x4-grid-cell, .times-rule-item-normal{
+    background-color: #CCFFCC !important;
+}
+.warning-state div, .warning-state-row, .warning-state-row .x4-grid-cell, .times-rule-item-warning{
+    background-color: #FFFFCC !important;
+}
+.critical-state div, .critical-state-row, .critical-state-row .x4-grid-cell, .times-rule-item-critical{
+    background-color: #FFCCCC !important;
+}
+.inactive-state div, .inactive-state-row, .inactive-state-row .x4-grid-cell{
+    background-color: #EFEFEF !important;
+}
+.normal-state-row.x4-grid-row-selected .x4-grid-cell{
+    background-color: #a2f7a2 !important;
+}
+.warning-state-row.x4-grid-row-selected .x4-grid-cell{
+    background-color: #f7f7a2 !important;
+}
+.critical-state-row.x4-grid-row-selected .x4-grid-cell{
+    background-color: #f7a2a2 !important;
+}
+.inactive-state-row.x4-grid-row-selected .x4-grid-cell{
+    background-color: #cccccc !important;
+}
+
+.times-rule-container {
+    height: 40px;
+    position: relative;
+}
+.times-rule-item {
+    float: left;
+    width: 33.3333%;
+    height: 18px;
+    border: 1px black solid;
+    text-align: center;
+}
+
+.times-rule-limit-text {
+    position: absolute;
+    width: 100px;
+    top: 18px;
+}
+.times-rule-limit-text-first {
+    left: 0px;
+}
+.times-rule-limit-text-last {
+    right: 0px;
+    text-align: right;
+}
+.times-rule-limit-text-middle {
+    margin-left: -50px;
+    text-align: center;
+}

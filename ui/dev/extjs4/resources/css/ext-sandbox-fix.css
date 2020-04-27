@@ -1,0 +1,165 @@
+.x4-border-box,
+.x4-border-box * {
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    -webkit-box-sizing: content-box; }
+
+.x4-panel-body, .x4-form-item, .x4-form-item-label, .x4-fieldset-header, .x4-form-field, .x4-form-display-field{
+    font-size: 16px;
+}
+
+.x4-panel-body *{
+    box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    -ms-box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+}
+
+.x-grid3-hd-row td.x-grid3-cell, .x-grid3-row-table td.x-grid3-cell {
+    box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    -ms-box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+}
+
+@-moz-document url-prefix()
+{
+    .x-grid3-hd-row td.x-grid3-cell, .x-grid3-row-table td.x-grid3-cell {
+        box-sizing: content-box !important;
+        -moz-box-sizing: content-box !important;
+    }
+}
+
+.x4-border-box .x4-field-default-toolbar .x4-form-text,
+.x4-border-box .x4-form-text{
+    height: 32px;
+}
+
+.x4-btn-default-small-icon button, .x4-btn-default-small-icon a, .x4-btn-default-small-icon .x4-btn-inner, .x4-btn-default-small-noicon button, .x4-btn-default-small-noicon a, .x4-btn-default-small-noicon .x4-btn-inner{
+    height: 20px;
+    line-height: 20px;
+}
+.x4-btn-default-small .x4-btn-inner{
+    font-size: 16px;
+}
+
+.x4-tool {
+  background-color: #E8F2FF;
+  border-radius: 3px;
+  /* width: 23px !important;
+  height: 23px !important; */
+}
+
+.x4-tool img {
+    /* width: 23px; */
+    /* height: 23px; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;    
+}
+img.x4-tool-close {
+  /* width: 23px !important;
+  height: 23px !important; */
+  background-image: url(../../../../resources/images_new/delete3.svg);
+  background-position: center !important;
+  /* width: 23px; */
+  /* height: 23px; */
+}
+
+/* .x-tool-close {
+  background-image: url(../images_new/delete3.svg);
+  background-position: center;
+} */
+
+.x4-form-trigger-wrap .x4-form-spinner-up,
+.x4-form-trigger-wrap .x4-form-spinner-down {
+  /* background-image: url('../../resources/themes/images/ux/spinner.jpg'); */
+  background-position: center !important;
+  background-image: none;
+  background-repeat: no-repeat;
+  width: 24px !important;
+  height: 16px !important;
+  font-size: 0;
+
+  /*border-bottom: 0;*/
+}
+
+.x4-form-trigger-wrap {
+vertical-align: top; }
+
+.x4-form-trigger {
+background-image: url(../../../../resources/images_new/trigger.svg);
+background-position: 0 0;
+width: 24px;
+height: 32px;
+border-bottom: 1px solid #b5b8c8;
+cursor: pointer;
+cursor: hand;
+overflow: hidden;
+    
+    border-top: 1px solid #b5b8c8;
+    border-right: 1px solid #b5b8c8;
+    background-repeat: no-repeat;
+    background-position: center !important;
+
+
+
+}
+.x4-border-box .x4-field-default-toolbar .x4-form-trigger,
+.x4-border-box .x4-form-trigger {
+height: 32px;
+}
+
+.x4-form-trigger-over {
+    background-color: #ebf5ff;
+    border-color: #6d9cd9;
+}
+
+.x4-form-trigger-wrap-focus .x4-form-trigger {
+    background-color:  #d8f2ff;
+    border-color: #7eadd9;
+}
+
+.x4-form-trigger-wrap-focus .x4-form-trigger-over {
+    background-color: #f3f9ff;
+    border-color: #6d9cd9;
+}
+
+.x4-form-trigger-click,
+.x4-form-trigger-wrap-focus .x4-form-trigger-click {
+  background-color: #d8f2ff;
+  border-color: #6d9cd9;
+}
+
+html .x4-form-trigger-wrap .x4-form-spinner-up {
+  /* background-position: 0 0px;  */
+  background-image: url(../../../../resources/images_new/trigger-inv.svg);
+}
+
+
+html .x4-form-trigger-wrap .x4-form-spinner-down {
+  /* background-position: 0 -16px; */
+  background-image: url(../../../../resources/images_new/trigger.svg);
+ }
+
+
+.information-icon {
+    cursor: pointer;
+}
+.x4-icon-size {
+    width: 24px;
+    height: 24px;
+}
+
+.ext4-gray-fieldset, .ext4-gray-fieldset > .x4-panel-body {
+    background-color: #F4F4F4 !important;
+    border-color: #EDEDED !important;
+}
+
+.x4-green-button {
+    background-color: #1b900f;
+}

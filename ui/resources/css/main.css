@@ -1,0 +1,310 @@
+.add {background-image:url(../images_new/add.svg) !important;}
+.current_invoices {background-image:url(../images/flag_blue.png) !important;}
+.unpaid_invoices {background-image:url(../images/addbk_16.png) !important;}
+.payed_invoices {background-image:url(../images_new/payed_invoices.svg) !important;}
+.saved_invoices {background-image:url(../images/savas_16.png) !important;}
+.all_payments {background-image:url(../images/all_payments.png) !important;}
+.timesheet {background-image:url(../images_new/timesheet.svg) !important;}
+.arrow-right-black {background-image:url(../images/arrow-right.png) !important;}
+.x-tool-bug{
+    background-image:url(../images/bug.png);
+}
+.pet-another-owner{
+    background-color: #EEEEEE !important;
+    position: relative;
+}
+.pet-another-owner:after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 1px;
+    background: #000000;
+    content: "";
+    width: calc(100% - 25px);
+    display: block;
+    margin-left: 25px;
+}
+.pet-another-owner-legend{
+    background-color: #EEEEEE !important;
+    position: relative;
+}
+.pet-another-owner-legend:after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 1px;
+    background: #000000;
+    content: "";
+    width: 100%;
+    display: block;
+}
+.pet-another-owner .x-grid3-cell-inner {
+    font-style: italic !important;
+}
+.temporary-disabled-party .x-grid3-cell-inner {
+    font-style: italic !important;
+}
+.temporary-disabled-party{
+    background-color: #DEDCDC;
+}
+.temporary-party .x-grid3-cell-inner {
+    font-style: italic !important;
+}
+.pet-lethal-row{
+    background-color: #FF9B9B !important;
+}
+.good-out-of-stock {
+    background-color: #FF9B9B;
+}
+.pet-deleted-row{
+    background-color: #CCCCCC !important;
+}
+.user-not-activated-row{
+    background-color: #CCCCCC;
+}
+
+.client-color-legend-item {
+    width:15px;
+    height:15px;
+    margin-right: 5px;
+    float:left;
+}
+.client-color-legend-header {
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+.ico-cross {
+    background-image:url(../../resources/images_new/delete.svg) !important;
+}
+
+.x-color-picker, .x-color-picker {
+    height: 195px;
+    position: relative;
+    overflow: hidden;
+}
+.x-color-picker div canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.x-color-picker-wheel {
+    z-index: 1;
+}
+.x-color-picker-gradient  {
+    z-index: 0;
+}
+.htmleditor-file-upload-img {
+    background-image:url(../images/imageupload.gif) !important;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+}
+
+.texteditor-add-mustashe-variable img {
+    background-size: contain !important;
+}
+.htmleditor-add-mustashe-variable {
+    background-image:url(../images/variable.png) !important;
+}
+.mce-i-htmleditor-add-mustashe-variable {
+    background-image:url(../images/variable.png) !important;
+    background-size: contain !important;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+}
+
+.htmleditor-file-upload-file {
+    background-image:url(../images/fileupload.gif) !important;
+}
+.mce-i-htmleditor-file-upload-file {
+    background-image:url(../images/fileuploader.png) !important;
+    background-size: contain !important;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+}
+.mce-i-htmleditor-file-upload-img  {
+    background-image:url(../images/imageuploader.png) !important;
+    background-size: contain !important;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+}
+.mycheckbox-on{
+    background-image:url(../images/checkbox_on.png) !important;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+.mycheckbox-off{
+    background-image:url(../images/checkbox_off.png) !important;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+
+.invoice-goods-set-bg, .invoice-goods-set-header{
+    background-color: #AAFF77;
+}
+
+.invoice-goods-set-header{
+    font-weight: bold;
+}
+
+.invoice-goods-set-price-changed {
+    background-color: red;
+}
+
+.invoice-goods-set-item, .default-invoice-goods-set-item{
+    background-color: #CCFF99;
+    font-size: 0.9em;
+}
+.invoice-goods-set-item td:first-child div{
+    padding-left: 30px;
+}
+.default-invoice-goods-set-item td:nth-child(2) div{
+    padding-left: 30px;
+}
+.checkbox-in-toolbar{
+    margin-bottom: 4px;
+}
+.add-grid-cell-trigger-btn, .edit-grid-cell-trigger-btn{
+    border-left: 1px solid #416aa3 !important;
+}
+.add-grid-cell-trigger-btn {
+    background-image: url(../images_new/add.svg) !important;
+}
+.edit-grid-cell-trigger-btn {
+    background-image: url(../images_new/edit.svg) !important;
+}
+.-inventar-same-party-good-color- {
+    background-color: #E8F2EB;
+}
+.-inventar-changed-quantity-fakt-color- {
+    background-color: #FFFF99;
+}
+.-inventar-changed-quantity-fakt-color-alt- {
+    background-color: #F9F971;
+}
+.invoice-goods-grid-price-reloadder-show {
+    background-image: url(../../dev/extjs/resources/images/default/grid/loading.gif);
+    background-repeat: no-repeat;
+    background-position-x: 6px;
+    background-position-y: 5px;
+}
+
+.visa-card {
+    background-image: url(../images/visamaster.png) !important;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: cover;
+}
+.mastercard-card {
+    background-image: url(../images/visamaster.png) !important;
+    background-repeat: no-repeat;
+    background-position-x: -68px;
+    background-position-y: 0px;
+    background-size: cover;
+}
+
+.medcard-archived-row {
+    color: darkgrey;
+}
+
+
+.planned-accepted-grid-row { background-color: #FFFF99; }
+.planned-not-approved-grid-row { background-color: #DEDCDC; }
+.planned-not-confirmed { background-color: #FFE3CC; }
+.normal-grid-row { background-color: #FFFFFF; }
+.medcard-locked-grid-row { background-color: #DEDCDC; }
+.invoice-goodsets-template-grid-row { background-color: #FFFF99; }
+.cassa-blocked-or-unfinished-docs-grid-row { background-color: #FFFF99; }
+.cassa-document-waiting-confirm-grid-row { background-color: #FFFF99; }
+.cassa-document-saved-grid-row { background-color: #DEDCDC; }
+.cassa-document-deleted-grid-row { background-color: #FFCCCC; }
+.goods-goodsets-grid-row { background-color: #FFFF99; }
+.store-goodsinstore-minus-quantity-grid-row { background-color: #DEDCDC; }
+.store-disabled-by-inventar-grid-row { background-color: #DEDCDC; }
+.store-inventar-diff-goods-grid-row { background-color: #FFFF99; }
+.store-disabled-unit-values-grid-row { background-color: #FFFF99; }
+.calendar-smena-assists-in-smena-grid-row { background-color: #FFFF99; }
+.calendar-smena-assists-in-other-smena-grid-row { background-color: #DEDCDC; }
+.store-inventar-used-grid-row { background-color: #FFFF99; }
+.system-log-is-error-grid-row { background-color: #FFFF99; }
+.fast-calling-called-grid-row { background-color: #FFFF99; }
+.fast-calling-deleted-grid-row { background-color: #DEDCDC; }
+.today-clients-direct-direction-grid-row { background-color: #FFFF99; }
+.today-clients-accepted-grid-row { background-color: #FFFF99; }
+.medcard-used-diagnoses-grid-row { background-color: #FFFF99; }
+.user-disabled-grid-row { background-color: #DEDCDC; }
+.invoice-edit-grid-disabled-grid-row { color: #F55151; }
+.goodsets-disabled-grid-row { color: #F55151; }
+.good-disabled-sale-param-grid-row { color: #F55151; }
+.stores-end-expirationg-goods-grid-row { background-color: #FFCCCC; }
+.cassa-disabled-grid-row { background-color: #FFCCCC; }
+
+.recomendation-item {
+    border: 1px solid white;
+}
+.recomendation-item-selected {
+    border: 1px solid grey;
+    background-color: darkgrey;
+}
+.recomendation-item.x-view-over {
+    background-color: lightgrey;
+}
+.recomendation-item-text {
+    padding: 4px;
+}
+.hospital-grid-waited-rows {
+    background-color: #FFFF99;
+}
+.warning-active-col,
+.confirmed-active-col,
+.vetmanager-active-col,
+.website-active-col,
+.vk-active-col,
+.fb-active-col,
+.vetmanager-disabled-active-col,
+.website-disabled-active-col,
+.vk-disabled-active-col,
+.fb-disabled-active-col {
+    margin: 0 5px 0 0;
+    width: 22px;
+    height: 22px;
+    background-size: cover;
+}
+.warning-active-col {
+    background-image: url("../images/warning.svg");
+}
+.confirmed-active-col {
+    background-image: url("../images/check.svg");
+}
+.vetmanager-active-col {
+    background-image: url("../images/vetmanager.svg");
+}
+.website-active-col {
+    background-image: url("../images_new/web.svg");
+}
+.vk-active-col {
+    background-image: url("../images_new/vk.svg");
+}
+.fb-active-col {
+    background-image: url("../images_new/facebook.svg");
+}
+.vetmanager-disabled-active-col {
+    background-image: url("../images/vetmanager-disabled.svg");
+}
+.website-disabled-active-col {
+    background-image: url("../images/web-disabled.svg");
+}
+.vk-disabled-active-col {
+    background-image: url("../images/vk-disabled.svg");
+}
+.fb-disabled-active-col {
+    background-image: url("../images/facebook-disabled.svg");
+}

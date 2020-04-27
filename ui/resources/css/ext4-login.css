@@ -1,0 +1,429 @@
+body {
+}
+
+div#login-window{
+    position: absolute;
+    top:50%;
+    left:50%;
+    /*margin:-75px 0px 0px -150px;*/
+}
+
+.vet-window,
+.vet-window * {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.vet-logo-big{
+    background-image: url(../images/logo-big.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.vet-logo-text{
+    background-image: url(../images/logo-text.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.vet-window{
+    padding: 3px;
+    border-width: 0px;
+    border-style: solid;
+    background-color: white;
+    -moz-box-shadow: 0px 0px 5px #6B6464;
+    -webkit-box-shadow: 0px 0px 5px #6B6464;
+    box-shadow: 0px 0px 5px #6B6464;
+}
+.vet-window-body{
+    padding: 15px;
+}
+
+.vet-form-header, .vet-form-header-error{
+    background-image: none;
+    background-color: rgb(217,230,246);
+    padding-top: 18px;
+    padding-bottom: 12px;
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(241, 251, 255, 1);
+    box-shadow: 0px 1px 0px 0px rgba(241, 251, 255, 1);
+    border-color: #C9C8D3;
+}
+
+.vet-form-header-error{
+    padding-top: 15px;
+    padding-bottom: 9px;
+}
+
+.vet-form-header .x4-panel-header-text{
+    font-weight: normal;
+    font-size: 16px;
+    color: #1F699A;
+}
+
+.vet-form-header-error .x4-panel-header-text-container{
+    line-height: 18px;
+    padding: 3px;
+}
+
+.vet-form-header-error .x4-panel-header-text{
+    background-color: #e02828;
+    font-size: 13px;
+    color: #FFF;
+    margin: 2px;
+    padding: 3px 6px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.vet-form-field{
+    background-image: linear-gradient(bottom, #FFFFFF 61%, #EDF2F2 100%);
+    background-image: -o-linear-gradient(bottom, #FFFFFF 61%, #EDF2F2 100%);
+    background-image: -moz-linear-gradient(bottom, #FFFFFF 61%, #EDF2F2 100%);
+    background-image: -webkit-linear-gradient(bottom, #FFFFFF 61%, #EDF2F2 100%);
+    background-image: -ms-linear-gradient(bottom, #FFFFFF 61%, #EDF2F2 100%);
+
+    background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0.61, #FFFFFF),
+            color-stop(1, #EDF2F2)
+    );
+}
+
+.vet-form-field .x4-form-field{
+    height: 32px;
+    padding: 5px 2px 2px 35px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.vet-form-button{
+    height: 32px;
+    padding: 1px;
+    border: 0px;
+    border-color: #a3f7ac;
+}
+.vet-form-button button{
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #2A6B23;
+    background-image: none;
+}
+
+.vet-form-button-over{
+    height: 32px;
+    padding: 1px;
+    border: 0px;
+    border-color: #a3f7ac;
+    background-color: #358a2e;
+}
+.vet-form-button-over button{
+    border-radius: 3px;
+    background-color: #358a2e;
+}
+
+
+.x4-vet-form-button-pressed{
+    height: 32px;
+    padding: 1px;
+    border: 0px;
+    background-image: linear-gradient(bottom, #459630 23%, #90cE8D 61%);
+    background-image: -o-linear-gradient(bottom, #459630 23%, #90cE8D 61%);
+    background-image: -moz-linear-gradient(bottom, #459630 23%, #90cE8D 61%);
+    background-image: -webkit-linear-gradient(bottom, #459630 23%, #90cE8D 61%);
+    background-image: -ms-linear-gradient(bottom, #459630 23%, #90cE8D 61%);
+
+    background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0.23, #459630),
+            color-stop(0.61, #90cE8D)
+    );
+    -moz-box-shadow: 0px 0px 2px #308a41;
+    -webkit-box-shadow: 0px 0px 2px #308a41;
+    box-shadow: 0px 0px 2px #308a41;
+    border-color: #a3f7ac;
+}
+.x4-vet-form-button-pressed button{
+    background-image: linear-gradient(bottom, #459630 12%, #59bA60 56%);
+    background-image: -o-linear-gradient(bottom, #459630 12%, #59bA60 56%);
+    background-image: -moz-linear-gradient(bottom, #459630 12%, #59bA60 56%);
+    background-image: -webkit-linear-gradient(bottom, #459630 12%, #59bA60 56%);
+    background-image: -ms-linear-gradient(bottom, #459630 12%, #59bA60 56%);
+
+    background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0.12, #459630),
+            color-stop(0.56, #59bA60)
+    );
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.vet-form-button span{
+    font-size: 16px !important;
+    color:#FFF !important;
+    padding-top: 1px !important;
+}
+
+.vet-form-button-sphere{
+    height: 91px;
+    border-width: 0px;
+    background: none;
+    padding: 1px;
+}
+.vet-form-button-sphere-over, .x4-vet-form-button-sphere-focus{
+    padding: 1px;
+    background: #9FBDE0;
+}
+.vet-form-button-sphere-over button, .x4-vet-form-button-sphere-focus button{
+    background-image: linear-gradient(bottom, #C9DAEC 12%, #C4D8EC 56%);
+    background-image: -o-linear-gradient(bottom, #C9DAEC 12%, #C4D8EC 56%);
+    background-image: -moz-linear-gradient(bottom, #C9DAEC 12%, #C4D8EC 56%);
+    background-image: -webkit-linear-gradient(bottom, #C9DAEC 12%, #C4D8EC 56%);
+    background-image: -ms-linear-gradient(bottom, #C9DAEC 12%, #C4D8EC 56%);
+
+    background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0.12, #C9DAEC),
+            color-stop(0.56, #C4D8EC)
+    );
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.vet-form-button-sphere .x4-btn-icon{
+    height: 64px;
+    width: 64px;
+    margin-left: 16px;
+    background-size: 100% 100% !important;
+    -o-background-size: 100% 100% !important;
+    -webkit-background-size: 100% 100% !important;
+    -khtml-background-size: 100% 100% !important;
+    -moz-background-size: 100% 100% !important;
+}
+
+.vet-form-button-sphere .x4-btn-inner{
+    padding: 64px 3px 0px 3px;
+    font-size: 12px;
+    color: #1F699A;
+}
+
+.vet-form-field-login .x4-form-field{
+    background: url(../images_new/login.svg) 10px no-repeat;
+}
+
+.vet-form-field-pass .x4-form-field{
+    background: url(../images_new/pass.svg) 10px no-repeat;
+}
+
+.vet-form-field-clinic .x4-form-field{
+    background: url(../images/clinic.png) left no-repeat;
+    background-position-x: 6px;
+}
+
+.vet-form-field-login .x4-form-invalid-field{
+    background: url(../images_new/login_invalid.svg) 10px no-repeat;
+}
+
+.vet-form-field-pass .x4-form-invalid-field{
+    background: url(../images_new/pass_invalid.svg) 10px no-repeat;
+}
+
+.vet-form-button-link, .vet-form-button-link-light{
+    background: none;
+    border: 0px;
+    padding: 0px;
+}
+.vet-form-button-link span, .vet-form-button-link-light span{
+    font-weight: normal !important;
+    font-size: 14px !important;
+    color: #1F699A !important;
+}
+.vet-form-button-link-light span{
+    color: #DFE8F6 !important;
+}
+.vet-form-button-link-over span, .vet-form-button-link-light-over span{
+    text-decoration: underline;
+}
+
+/*.vet-form input.login-form*/
+
+.noborder{
+    border-width: 0px!important;
+}
+
+.nobackground{
+    background:none !important;
+}
+
+.noshadow{
+    	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.border-3d{
+    -moz-box-shadow: 0px 0px 2px #6B6464;
+    -webkit-box-shadow: 0px 0px 2px #6B6464;
+    box-shadow: 0px 0px 2px #6B6464;
+    border-color: #f1fbff;
+}
+
+.gradient{
+    background-image: linear-gradient(bottom, rgb(199,216,234) 15%, rgb(217,230,246) 50%);
+    background-image: -o-linear-gradient(bottom, rgb(199,216,234) 15%, rgb(217,230,246) 50%);
+    background-image: -moz-linear-gradient(bottom, rgb(199,216,234) 15%, rgb(217,230,246) 50%);
+    background-image: -webkit-linear-gradient(bottom, rgb(199,216,234) 15%, rgb(217,230,246) 50%);
+    background-image: -ms-linear-gradient(bottom, rgb(199,216,234) 15%, rgb(217,230,246) 50%);
+
+    background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0.15, rgb(199,216,234)),
+            color-stop(0.50, rgb(217,230,246))
+    );
+}
+
+.border-radius-10, .border-radius-10-l, .border-radius-10-t, .border-radius-10-tl {
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    border-top-left-radius: 10px;
+}
+.border-radius-10, .border-radius-10-r, .border-radius-10-t, .border-radius-10-tr {
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-right-radius: 10px;
+}
+.border-radius-10, .border-radius-10-l, .border-radius-10-b, .border-radius-10-bl {
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-left-radius: 10px;
+}
+.border-radius-10, .border-radius-10-r, .border-radius-10-b, .border-radius-10-br {
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.border-radius-8, .border-radius-8-l, .border-radius-8-t, .border-radius-8-tl {
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    border-top-left-radius: 8px;
+}
+.border-radius-8, .border-radius-8-r, .border-radius-8-t, .border-radius-8-tr {
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    border-top-right-radius: 8px;
+}
+.border-radius-8, .border-radius-8-l, .border-radius-8-b, .border-radius-8-bl {
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    border-bottom-left-radius: 8px;
+}
+.border-radius-8, .border-radius-8-r, .border-radius-8-b, .border-radius-8-br {
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.border-radius-4, .border-radius-4-l, .border-radius-4-t, .border-radius-4-tl {
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    border-top-left-radius: 4px;
+}
+.border-radius-4, .border-radius-4-r, .border-radius-4-t, .border-radius-4-tr {
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-right-radius: 4px;
+}
+.border-radius-4, .border-radius-4-l, .border-radius-4-b, .border-radius-4-bl {
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-bottom-left-radius: 4px;
+}
+.border-radius-4, .border-radius-4-r, .border-radius-4-b, .border-radius-4-br {
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    border-bottom-right-radius: 4px;
+}
+.view-qrcode {
+    width:100%;
+    height:170px;
+    margin-top: 10px;
+    text-align: center;
+}
+.view-qrcode img {
+    border:none;
+    height:165px;
+    width:auto;
+}
+
+@-webkit-keyframes autofill {
+    to {
+        color: inherit;
+        background-color: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+
+
+@keyframes clearAutofillLoginField {
+    to {
+        background: url(../images/login_ico_gray.png) left no-repeat;
+    }
+}
+@keyframes clearAutofillPasswordField {
+    to {
+        background: url(../images/pass_ico_gray.png) left no-repeat;
+    }
+}
+@keyframes clearAutofill {
+    to {
+        background: transparent;
+    }
+}
+
+.vet-form-field-pass .x4-form-field {
+    background: url(../images/pass_ico_gray.png) left no-repeat;
+}
+
+.vet-form-field-login .x4-form-field:-webkit-autofill {
+    animation: clearAutofillLoginField forwards;
+}
+.vet-form-field-pass .x4-form-field:-webkit-autofill {
+    animation: clearAutofillPasswordField forwards;
+}
+
+input:-webkit-autofill {
+    animation: clearAutofill forwards;
+}
+
+.dialog-how-use-qrcode {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.vet-form-login-qrcode {
+    background-color: #FFFFFF !important;
+}

@@ -1,0 +1,4 @@
+<svg style="-webkit-transform: rotateY(180deg);transform: rotateY(180deg);" width="10" height="35" viewBox="0 0 10 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 5C0 2.23858 2.23858 0 5 0H10V35H5C2.23858 35 0 32.7614 0 30V5Z" fill="#CDE1F8"/>
+<path d="M10 11.8086L10 22.1914C10 22.9104 9.17467 23.2704 8.692 22.762L3.76287 17.5706C3.46366 17.2555 3.46366 16.7445 3.76287 16.4294L8.692 11.238C9.17467 10.7296 10 11.0897 10 11.8086Z" fill="#416AA3"/>
+</svg>

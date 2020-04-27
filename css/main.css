@@ -1,0 +1,26 @@
+li a {
+	color: #3764A0;
+	cursor: pointer;
+	text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: #0d4f9b;
+    cursor: pointer;
+}
+div#header{
+    background-image: url(../images/top_backgr_new.gif);
+    background-repeat: repeat-x;
+    background-color: #cad9ec;
+    height: 100%;
+    padding-top: 9px;
+    padding-left: 20px;
+    font-size: 35px;
+}
+
+.required{
+    font-weight: bold;
+    font-size: 8pt;
+    color: red;
+    font-family: 'Arial Black';
+}

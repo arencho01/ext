@@ -1,0 +1,36 @@
+.ext-gecko .x-window-body .x-panel.overflow-hidden .x-form-item {
+    overflow: hidden;
+}
+.x-panel.overflow-hidden .x-form-invalid-msg {
+	display: none !important;
+}
+
+/* стили для календаря */
+/*.ext-cal-dayview .ext-cal-body-ct.x-unselectable {
+	height: auto !important;
+	overflow: inherit !important;
+}
+*/
+
+/* стили для webkit браузеров */
+.x-btn-focus button {
+	border: 0 none;
+}
+
+/* стили для окна "Добавление пользователя" */
+.fieldset-box {
+	max-height: 620px;
+	min-width: 200px;
+}
+.fieldset-box .J-Zh-I-img {
+	margin: 0;
+}
+.fieldset-box-sizing {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* стили для кнопки удалить в модуле "счета" в окне с штрихкодом */
+.icon-remove {
+    background-position: -306px 0;
+}

@@ -1,0 +1,38 @@
+a.good-link {
+    font-weight: bold;
+}
+div.fst {
+    border: 1px solid black;
+    padding: 10px;
+}
+th, td {
+    padding: 5px !important;
+}
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+th.nopadding, td.nopadding {
+    padding: 0px !important;
+}
+.bor-top {
+    border-top: 1px solid black !important;
+}
+.bor-right {
+    border-right: 1px solid black !important;
+}
+.bor-bottom {
+    border-bottom: 1px solid black !important;
+}
+.bor-left {
+    border-left: 1px solid black !important;
+}
+.bor-all {
+    border: 1px solid black !important;
+}
+.color-row-main{
+    background-color: white;
+}
+.color-row-child{
+    background-color: white;
+}

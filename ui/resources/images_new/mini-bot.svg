@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: SketchAPI 5.1.316 <https://api.sketch.io/> -->
+<svg style="-webkit-transform: rotate(180deg);-ms-transform: rotate(180deg);transform: rotate(180deg)" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketchjs="https://sketch.io/dtd/" sketchjs:metadata="eyJ0aXRsZSI6IkRyYXdpbmciLCJkZXNjcmlwdGlvbiI6Ik1hZGUgd2l0aCBTa2V0Y2hwYWQgLSBodHRwczovL3NrZXRjaC5pby9za2V0Y2hwYWQiLCJtZXRhZGF0YSI6e30sImNsaXBQYXRoIjp7ImVuYWJsZWQiOnRydWUsInN0eWxlIjp7InN0cm9rZVN0eWxlIjoiYmxhY2siLCJsaW5lV2lkdGgiOjF9fSwiZXhwb3J0RFBJIjo3MiwiZXhwb3J0Rm9ybWF0IjoicG5nIiwiZXhwb3J0UXVhbGl0eSI6MC45NSwidW5pdHMiOiJweCIsIndpZHRoIjozNSwiaGVpZ2h0IjoxMCwicGFnZXMiOnsibGVuZ3RoIjoxLCJkYXRhIjpbeyJ3aWR0aCI6MzUsImhlaWdodCI6MTB9XX19" width="35" height="10" viewBox="0 0 35 10" sketchjs:version="5.1.316">
+<path sketchjs:tool="rectangle" style="fill: transparent; mix-blend-mode: source-over; fill-opacity: 1; fill-rule: nonzero; vector-effect: non-scaling-stroke;" d="M0 0 L35 0 35 10 0 10 z"/>
+<g sketchjs:tool="clipart" style="mix-blend-mode: source-over;" transform="matrix(0.01745240643728604,0.9998476951563912,-0.9998476951563912,0.01745240643728604,35,0)">
+	<path d="M0 5C0 2.23858 2.23858 0 5 0H10V35H5C2.23858 35 0 32.7614 0 30V5Z" sketchjs:uid="1" style="fill: #CDE1F8;"/>
+	<path d="M10 11.8086L10 22.1914C10 22.9104 9.17467 23.2704 8.692 22.762L3.76287 17.5706C3.46366 17.2555 3.46366 16.7445 3.76287 16.4294L8.692 11.238C9.17467 10.7296 10 11.0897 10 11.8086Z" sketchjs:uid="2" style="fill: #416AA3;"/>
+</g>
+</svg>

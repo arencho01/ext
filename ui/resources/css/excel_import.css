@@ -1,0 +1,15 @@
+.list_error {
+    padding-left: 40px;
+    list-style-type: decimal;    
+}
+.list_error__item {
+    list-style: decimal;
+}
+
+.list_success {
+    padding-left: 40px;
+    list-style-type: decimal;    
+}
+.list_success__item {
+    list-style: decimal;
+}

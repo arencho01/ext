@@ -1,0 +1,203 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.row:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.row { display: inline-block; }
+/* start commented backslash hack \*/
+* html .row { height: 1%; }
+.row { display: block; }
+/* close commented backslash hack */
+
+.wrapper {
+	width: 1240px;
+	margin: 0 auto;
+}
+
+.incomming {
+	font-family: Arial;
+	color:  #808080;
+	font-size: 17px;
+	font-weight: 400;
+	padding: 20px;
+	border: 1px solid black;
+
+}
+
+.incomming__label-bold {
+	font-weight: 700;
+}
+
+.incomming__label-red {
+	color: #ff0000;
+}
+
+.incomming__top {
+	padding: 20px;
+}
+
+.incomming__form {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #dfdfdf;
+	box-sizing: border-box;
+	background-color: #f4f4f4;
+	padding: 10px;
+}
+
+.incomming__form-topgroup {
+	padding: 10px;
+	border-bottom: 1px dashed black;
+}
+
+.incomming__form-bottomgroup {
+	padding: 10px;
+}
+
+.incomming__about-top {
+	padding-bottom: 10px;
+}
+
+
+.incomming__about {
+	float: left;
+	width: 75%;
+	box-sizing: border-box;
+}
+
+.inclomming__tools {
+	float: right;
+}
+
+.incomming__fio {
+	float: left;
+}
+.incomming__fio-input {
+	width: 157px;
+}
+
+
+.incomming__pet {
+	float: right;
+}
+
+.incomming__pet-input {
+	width: 157px;
+}
+
+.toolbar-right {
+	float: right;	
+}
+
+.incomming__caller-info {
+	float: left;
+}
+
+.incomming__about-input {
+	width: 270px;
+}
+
+/* button */
+
+.button {
+	border-radius: 4px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	box-sizing: border-box;
+	background: -webkit-linear-gradient(90deg, #e3e3e3 0%, #f8f8f8 100%);
+	background: -moz-linear-gradient(90deg, #e3e3e3 0%, #f8f8f8 100%);
+	background: -o-linear-gradient(90deg, #e3e3e3 0%, #f8f8f8 100%);
+	background: -ms-linear-gradient(90deg, #e3e3e3 0%, #f8f8f8 100%);
+	background: linear-gradient(0deg, #e3e3e3 0%, #f8f8f8 100%);
+	height: 31px;	
+	margin-left: 5px;
+}
+
+.button-small {
+	width: 31px;
+}
+
+.button-big {
+	width: 145px;
+}
+
+
+.base-form__input {
+	font-family: Arial;
+	color:  #808080;
+	font-size: 17px;
+	font-weight: 400;	
+	border-style: solid;
+	border-width: 1px;
+	border-color: #b5b8c8;	
+	padding: 3px;
+    box-sizing: border-box;
+	height: 32px;
+	background: -webkit-linear-gradient(90deg, #ffffff 0%, #ffffff 49%, #f2f4f4 89%, #dee3e6 97%, #dee3e6 100%);
+	background: -moz-linear-gradient(90deg, #ffffff 0%, #ffffff 49%, #f2f4f4 89%, #dee3e6 97%, #dee3e6 100%);
+	background: -o-linear-gradient(90deg, #ffffff 0%, #ffffff 49%, #f2f4f4 89%, #dee3e6 97%, #dee3e6 100%);
+	background: -ms-linear-gradient(90deg, #ffffff 0%, #ffffff 49%, #f2f4f4 89%, #dee3e6 97%, #dee3e6 100%);
+	background: linear-gradient(0deg, #ffffff 0%, #ffffff 49%, #f2f4f4 89%, #dee3e6 97%, #dee3e6 100%);
+}
+
+.base-form__textarea {
+	resize: none;
+	width: 100%;
+}
+
+.base-form__legend {
+	float: left;
+}
+

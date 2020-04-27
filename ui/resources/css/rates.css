@@ -1,0 +1,27 @@
+.rates-percent-view {
+    height: 20px;
+}
+
+.rates-percent-view .rates-background {
+    height: 20px;
+    background-color: #afbdad;
+    line-height: 20px;
+    text-align: center;
+}
+
+.rates-percent-view .rates-foreground {
+    height: 20px;
+    background-color: green;
+    position: relative;
+    top: -20px;
+    width: 0%;
+}
+
+.rates-percent-view .rates-text {
+    color: #ffffff;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    position: relative;
+    top: -40px;
+}
