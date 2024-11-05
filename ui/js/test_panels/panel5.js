@@ -31,7 +31,49 @@ panel5 = new Ext.Panel({
             xtype: 'panel',
             flex: 1,
             padding: 10,
-            html: 'Тут решение'
+            layout: 'fit',
+            autoWidth: true,
+            bodyStyle: 'border: 0',
+            items: [
+                (function () {
+                    const checkboxSelModel = new Ext.grid.CheckboxSelectionModel();
+
+                    return {
+                        xtype: 'grid',
+                        title: 'My grid',
+                        autoWidth: true,
+                        autoHeight: true,
+                        store: new Ext.data.JsonStore({
+                            fields: ['name', 'price', 'quantity'],
+                            url: 'http://localhost:8000/ui/api/dataForTask5&6.php',
+                            root: 'data',
+                            autoLoad: true
+                        }),
+                        sm: checkboxSelModel,
+                        columns: [
+                            checkboxSelModel,
+                            {
+                                id: 'name',
+                                header: 'Название',
+                                dataIndex: 'name',
+                                sortable: true
+                            },
+                            {
+                                id: 'price',
+                                header: 'Цена',
+                                dataIndex: 'price',
+                                sortable: true
+                            },
+                            {
+                                id: 'quantity',
+                                header: 'Кол-во',
+                                dataIndex: 'quantity',
+                                sortable: true
+                            }
+                        ]
+                    }
+                })()
+            ]
         }
     ]
 });

@@ -32,7 +32,11 @@ panel13 = new Ext.Panel({
             xtype: 'panel',
             flex: 1,
             padding: 10,
-            html: 'Тут решение'
+            items: [
+                (function () {
+
+                })
+            ]
         }
     ]
 });

@@ -30,7 +30,45 @@ panel12 = new Ext.Panel({
             xtype: 'panel',
             flex: 1,
             padding: 10,
-            html: 'Тут решение'
+            items: [
+                (function (){
+                    let myTemplate = new Ext.XTemplate(
+                        `
+                             <div style="font-size: 18px; padding: 5px;">
+                                 <h3 style="margin-bottom: 10px;">{title}</h3>
+                                 <ul>
+                                     <tpl for="items">
+                                         <li>{.}</li>
+                                     </tpl>
+                                 </ul>
+                             </div>
+                        `
+                    );
+
+                    function loadData(panel) {
+                        Ext.Ajax.request({
+                            url: 'http://localhost:8000/ui/api/dataForTask12.php',
+                            method: 'POST',
+                            success: function (response) {
+                                let data = Ext.decode(response.responseText);
+
+                                myTemplate.overwrite(panel.body, data);
+                            }
+                        });
+                    }
+
+                    return {
+                        xtype: 'panel',
+                        flex: 1,
+                        padding: 10,
+                        listeners: {
+                            afterrender: function (panel) {
+                                loadData(panel);
+                            }
+                        }
+                    }
+                })()
+            ]
         }
     ]
 });

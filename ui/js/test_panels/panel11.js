@@ -30,7 +30,38 @@ panel11 = new Ext.Panel({
             xtype: 'panel',
             flex: 1,
             padding: 10,
-            html: 'Тут решение'
+            items: [
+                (function (){
+                    let myTemplate = new Ext.XTemplate(
+                        `
+                            <div style="font-size: 18px; padding: 5px;">
+                                 <h3>{title}</h3>
+                                 <ul style="margin-top: 10px">
+                                     <tpl for="items">
+                                         <li>{.}</li>
+                                     </tpl>
+                                 </ul>
+                           </div>
+                        `
+                    );
+
+                    let data = {
+                        'title': 'Xtemplate',
+                        'items': ['Элемент 1', 'Элемент 2', 'Элемент 3']
+                    };
+
+                    return {
+                        xtype: 'panel',
+                        flex: 1,
+                        padding: 10,
+                        listeners: {
+                            afterrender: function (panel) {
+                                myTemplate.overwrite(panel.body, data);
+                            }
+                        }
+                    }
+                })()
+            ]
         }
     ]
 });

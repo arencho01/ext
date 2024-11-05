@@ -31,7 +31,43 @@ panel1 = new Ext.Panel({
             xtype: 'panel',
             flex: 1,
             padding: 10,
-            html: 'Тут решение'
+            layout: 'form',
+            items: [
+                {
+                    xtype: 'button',
+                    text: 'Кнопка',
+                    style: 'margin-bottom: 10px',
+                    handler: function () {
+                        addButton(this.ownerCt);
+
+                        let btn = this;
+                        setTimeout(function() {
+                            btn.disable();
+                        }, 3000);
+                    }
+                }
+            ]
         }
     ]
 });
+
+
+function addButton(targetPanel) {
+
+    let newButton = new Ext.Button({
+        text: 'Кнопка',
+        style: 'margin-bottom: 10px',
+        handler: function (btn) {
+            addButton(targetPanel);
+
+            setTimeout(function () {
+                btn.disable();
+            }, 3000);
+        }
+    });
+
+    targetPanel.add(newButton);
+
+    targetPanel.doLayout();
+
+}

@@ -7,11 +7,7 @@ panel4 = new Ext.Panel({
             a.doLayout();
         }
     },
-    layout: {
-        type: 'vbox',
-        pack: 'start',
-        align: 'stretch'
-    },
+    layout: 'auto',
     items: [
         {
             xtype: 'panel',
@@ -28,11 +24,38 @@ panel4 = new Ext.Panel({
                 'в датапикере отрбражать дату в формате 27.04.2020 а результат',
                 'отображать в формате Y-m-d'
             ].join('<br/>')
-        }, {
+        },
+        {
+            xtype: 'form',
+            title: 'Datepicker',
+            width: 320,
+            labelWidth: 150,
+            padding: 10,
+            style: 'margin-top: 10px',
+            items: [
+                {
+                    xtype: 'datefield',
+                    format: 'd.m.Y',
+                    fieldLabel: 'Выберите дату',
+
+                    listeners: {
+                        select: function (field, date) {
+                            const formattedDate = Ext.util.Format.date(date, 'Y-m-d');
+                            const resultText = 'Результат: ' + formattedDate;
+
+                            Ext.getCmp('dateResult').update(resultText);
+                        }
+                    }
+                }
+            ],
+
+        },
+        {
             xtype: 'panel',
+            id: 'dateResult',
             flex: 1,
             padding: 10,
-            html: 'Тут решение'
+            html: 'Результат'
         }
     ]
 });
