@@ -62,7 +62,7 @@ panel13 = new Ext.Panel({
                             method: 'POST',
                             success: function (response) {
                                 let data = Ext.decode(response.responseText);
-                                data = data.data;                                           // чтобы не обращаться везде data.data
+                                data = data.data;   // чтобы не обращаться везде data.data
 
                                 myTemplate.overwrite(panel.body, data);
                             }
