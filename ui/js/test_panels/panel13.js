@@ -34,8 +34,52 @@ panel13 = new Ext.Panel({
             padding: 10,
             items: [
                 (function () {
+                    let myTemplate = new Ext.XTemplate(
+                        `
+                            <tpl if="articles.length &gt; 0">
+                                <h2 style="margin: 0 0 5px">Articles:</h2>
+                                <ul style="margin: 0 0 25px">
+                                    <tpl for="articles">
+                                        <li><h4 style="font-size: 14px; font-weight: 600">{title}</h4> {content}</li>
+                                    </tpl>
+                                </ul>
+                            </tpl>
+                            
+                            <tpl if="likes.length &gt; 0">
+                                <h2>Likes:</h2>
+                                <ul>
+                                    <tpl for="likes">
+                                        <li>{user} - <tpl if="like">Лайкнул</tpl><tpl if="!like">Не лайкнул</tpl></li>
+                                    </tpl>
+                                </ul>
+                            </tpl>
+                        `
+                    );
 
-                })
+                    function loadData(panel) {
+                        Ext.Ajax.request({
+                            url: 'http://localhost:8000/ui/api/dataForTask13.php',
+                            method: 'POST',
+                            success: function (response) {
+                                let data = Ext.decode(response.responseText);
+                                data = data.data;                                           // чтобы не обращаться везде data.data
+
+                                myTemplate.overwrite(panel.body, data);
+                            }
+                        });
+                    }
+
+                    return {
+                        xtype: 'panel',
+                        flex: 1,
+                        padding: 10,
+                        listeners: {
+                            afterrender: function (panel) {
+                                loadData(panel);
+                            }
+                        }
+                    }
+                })()
             ]
         }
     ]

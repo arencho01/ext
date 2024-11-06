@@ -32,7 +32,43 @@ panel16 = new Ext.Panel({
             xtype: 'panel',
             flex: 1,
             padding: 10,
-            html: 'Тут решение'
+            items: [
+                {
+                    xtype: 'button',
+                    id: 'downloadBtn',
+                    text: 'Загрузить данные',
+                    handler: function () {
+                        let win = new Ext.Window({
+                            title: 'Загрузка данных',
+                            width: 180,
+                            height: 120,
+                            padding: 10,
+                            // closable: false,
+                            listeners: {
+                                show: function () {
+                                    win.getEl().mask('Идёт загрузка...');
+                                }
+                            }
+                        });
+
+                        Ext.Ajax.request({
+                            method: 'POST',
+                            url: 'http://localhost:8000/ui/api/dataForTask16.php',
+                            success: function (response) {
+
+                                if (response.status === 200) {
+                                    win.getEl().unmask();
+                                    win.setWidth('auto');
+                                    win.update('Данные успешно загружены!');
+                                    win.center();
+                                }
+                            }
+                        });
+
+                        win.show();
+                    }
+                }
+            ]
         }
     ]
 });
