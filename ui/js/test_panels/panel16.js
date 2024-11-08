@@ -64,7 +64,6 @@ panel16 = new Ext.Panel({
                                 }
                             }
                         });
-
                         win.show();
                     }
                 }

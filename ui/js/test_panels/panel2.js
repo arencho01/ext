@@ -50,7 +50,8 @@ panel2 = new Ext.Panel({
                             }),
                             displayField: 'text',
                             valueField: 'id',
-                            value: 'Выберите запись',
+                            // value: 'Выберите запись',
+                            emptyText: 'Выберите запись',
                             mode: 'local',
                             width: 200,
                             editable: false,
@@ -83,11 +84,12 @@ panel2 = new Ext.Panel({
                                 fields: ['id', 'text'],
                                 url: 'http://localhost:8000/ui/api/dataForTask2.php',
                                 root: 'data',
-                                autoLoad: false
+                                autoLoad: false,
                             }),
                             displayField: 'text',
                             valueField: 'id',
-                            value: 'Выберите запись',
+                            // value: 'Выберите запись',
+                            emptyText: 'Выберите запись',
                             mode: 'remote',
                             width: 200,
                             editable: false,
@@ -99,6 +101,7 @@ panel2 = new Ext.Panel({
                             style: 'margin-left: 10px',
                             handler: function () {
                                 let remoteCombo = Ext.getCmp('remoteCombo2');
+
                                 remoteCombo.store.reload();
                             }
                         }

@@ -70,7 +70,8 @@ panel5 = new Ext.Panel({
                                 dataIndex: 'quantity',
                                 sortable: true
                             }
-                        ]
+                        ],
+                        // columnLines: true
                     }
                 })()
             ]

@@ -31,6 +31,7 @@ panel6 = new Ext.Panel({
             ].join('<br/>')
         }, {
             xtype: 'panel',
+            id: 'taskPanel',
             flex: 1,
             padding: 10,
             layout: 'fit',
@@ -38,9 +39,12 @@ panel6 = new Ext.Panel({
             bodyStyle: 'border: 0',
             items: [
                 (function () {
+                    // let selectedItems = [];
+
                     const checkboxSelModel = new Ext.grid.CheckboxSelectionModel({
                         listeners: {
                             selectionchange: function (selModel) {
+                                // console.log(selModel.selections.items);
                                 btn.setDisabled(selModel.getCount() === 0);
                             }
                         }
@@ -53,46 +57,66 @@ panel6 = new Ext.Panel({
                             fontSize: '14px'
                         },
                         handler: function () {
-                            console.log('Клик');
+                            let selectedItems = checkboxSelModel.getSelections();
+
+
+                            let resultOutput = selectedItems.map(function (item) {
+                                return `${item.get('name')}`;
+                            });
+
+                            resultOutput.unshift('Вы выбрали следующие элементы:');
+
+                            let resultPanel = this.ownerCt.ownerCt.ownerCt.items.items[1];
+
+                            resultPanel.update(resultOutput.join('<br>'));
                         }
                     });
 
-                    return {
-                        xtype: 'grid',
-                        title: 'My grid',
-                        autoWidth: true,
-                        autoHeight: true,
-                        frame: true,
-                        store: new Ext.data.JsonStore({
-                            fields: ['name', 'price', 'quantity'],
-                            url: 'http://localhost:8000/ui/api/dataForTask5&6.php',
-                            root: 'data',
-                            autoLoad: true
-                        }),
-                        sm: checkboxSelModel,
-                        columns: [
-                            checkboxSelModel,
-                            {
-                                id: 'name',
-                                header: 'Название',
-                                dataIndex: 'name',
-                                sortable: true
-                            },
-                            {
-                                id: 'price',
-                                header: 'Цена',
-                                dataIndex: 'price',
-                                sortable: true
-                            },
-                            {
-                                id: 'quantity',
-                                header: 'Кол-во',
-                                dataIndex: 'quantity',
-                                sortable: true
-                            }
-                        ],
-                        tbar: [btn]
-                    }
+                    return [
+                        {
+                            xtype: 'grid',
+                            title: 'My grid',
+                            autoWidth: true,
+                            autoHeight: true,
+                            style: 'margin-bottom: 10px',
+                            frame: true,
+                            store: new Ext.data.JsonStore({
+                                fields: ['name', 'price', 'quantity'],
+                                url: 'http://localhost:8000/ui/api/dataForTask5&6.php',
+                                root: 'data',
+                                autoLoad: true
+                            }),
+                            sm: checkboxSelModel,
+                            columns: [
+                                checkboxSelModel,
+                                {
+                                    id: 'name',
+                                    header: 'Название',
+                                    dataIndex: 'name',
+                                    sortable: true
+                                },
+                                {
+                                    id: 'price',
+                                    header: 'Цена',
+                                    dataIndex: 'price',
+                                    sortable: true
+                                },
+                                {
+                                    id: 'quantity',
+                                    header: 'Кол-во',
+                                    dataIndex: 'quantity',
+                                    sortable: true
+                                }
+                            ],
+                            tbar: [btn]
+                        },
+                        {
+                            xtype: 'panel',
+                            id: 'resultPanel',
+                            padding: 10,
+                            html: 'Результат будет тут'
+                        }
+                    ]
                 })()
             ]
         }

@@ -1,0 +1,18 @@
+.counterTab {
+    position: relative;
+}
+.counterTab::before {
+    content: attr(data-count);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 15px;
+    height: 15px;
+
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: red;
+}

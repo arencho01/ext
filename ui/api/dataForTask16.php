@@ -2,4 +2,4 @@
 
 header('Content-Type: application/json');
 
-sleep(3);
+sleep(6);

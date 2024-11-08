@@ -44,6 +44,8 @@
 <!--    <link rel="stylesheet" type="text/css" href="ui/dev/extjs4/resources/css/ext-sandbox-fix.css" />-->
     <link rel="stylesheet" type="text/css" href="ui/resources/css/added_styles.css" />
 
+    <link rel="stylesheet" href="ui/css/style.css">
+
 </head>
 <body scroll="no">
     <script language="javascript" type="text/javascript" src="ui/dev/dexie/dexie.js"></script>

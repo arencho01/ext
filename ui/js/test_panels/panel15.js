@@ -33,10 +33,12 @@ panel15 = new Ext.Panel({
                 (function (){
                     let counter = 0;
 
-                    function updateTabCounter() {
-                        let counterTab = Ext.getCmp('counterTab');
+                    function updateTabCounter(tabPanel) {
+                        let counterTab = tabPanel.items.items[0];
 
-                        counterTab.body.update('Счётчик: ' + counter);
+                        let tabEl = tabPanel.getTabEl(counterTab);
+
+                        tabEl.setAttribute('data-count', counter);
                     }
 
                     return  {
@@ -48,11 +50,12 @@ panel15 = new Ext.Panel({
                             {
                                 id: 'counterTab',
                                 title: 'Tab 1',
-                                html: 'Счётчик: 0',
+                                tabCls: 'counterTab',
+                                html: 'Senectus et netus et malesuada. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Neque convallis a cras semper auctor. Libero id faucibus nisl tincidunt eget. Leo a diam sollicitudin tempor id. A lacus vestibulum sed arcu non odio euismod lacinia. In tellus integer feugiat scelerisque.',
                                 listeners: {
-                                    activate: function () {
+                                    activate: function (tab) {
                                         counter++;
-                                        updateTabCounter();
+                                        updateTabCounter(tab.ownerCt);
                                     }
                                 }
                             },
@@ -60,9 +63,9 @@ panel15 = new Ext.Panel({
                                 title: 'Tab 2',
                                 html: 'Montes praesent litora interdum parturient facilisi elit. Sodales hendrerit quis tincidunt turpis vulputate consectetur lacus. Semper in magnis dapibus scelerisque viverra scelerisque maecenas.',
                                 listeners: {
-                                    activate: function () {
+                                    activate: function (tab) {
                                         counter++;
-                                        updateTabCounter();
+                                        updateTabCounter(tab.ownerCt);
                                     }
                                 }
                             },
@@ -70,9 +73,9 @@ panel15 = new Ext.Panel({
                                 title: 'Tab 2',
                                 html: 'Aenean massa vitae nec nibh ut. Efficitur suscipit ex vitae nullam donec. Pellentesque eleifend ex orci ad est proin a habitant. Et facilisi arcu hendrerit egestas suscipit nascetur.',
                                 listeners: {
-                                    activate: function () {
+                                    activate: function (tab) {
                                         counter++;
-                                        updateTabCounter();
+                                        updateTabCounter(tab.ownerCt);
                                     }
                                 }
                             }
